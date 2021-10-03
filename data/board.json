@@ -2,10 +2,10 @@
   "player": [
     {
       "id": "",
-      "initial amount": "",
       "current amount": "",
-      "properties"
+      "properties": [],
+      "current_location": []
     }
   ],
-  "start room": "the room"
+  "start location": "GO!"
 }

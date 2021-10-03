@@ -1,0 +1,10 @@
+{
+  "player": [
+    {
+      "": "the room",
+      "description": "A very lonely room.",
+      "exits": []
+    }
+  ],
+  "start room": "the room"
+}

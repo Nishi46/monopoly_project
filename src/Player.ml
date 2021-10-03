@@ -12,3 +12,7 @@ type player = {
   properties : string list;
   current_location : location;
 }
+
+let get_current_location player = player.current_location
+
+let get_current_amount p 

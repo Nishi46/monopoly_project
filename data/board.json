@@ -1,9 +1,10 @@
 {
-  "rooms": [
+  "player": [
     {
-      "id": "the room",
-      "description": "A very lonely room.",
-      "exits": []
+      "id": "",
+      "initial amount": "",
+      "current amount": "",
+      "properties"
     }
   ],
   "start room": "the room"

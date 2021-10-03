@@ -1,9 +1,13 @@
 open Yojson.Basic.Util
 
-type room_id = string
+type player_id = int
 
-type exit_name = string
+type amount = int
 
-exception UnknownRoom of room_id
+type player = {
+  id : player_id;
+  current_amount : int;
+  properties : string list;
 
-exception UnknownExit of exit_name
+
+}

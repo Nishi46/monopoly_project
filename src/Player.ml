@@ -15,4 +15,4 @@ type player = {
 
 let get_current_location player = player.current_location
 
-let get_current_amount p 
+let get_current_amt player = player.current_amount

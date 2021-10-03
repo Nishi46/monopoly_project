@@ -1,11 +1,9 @@
 {
-  "player": [
+  "property": [
     {
-      "id": "",
-      "current amount": "",
-      "properties": [],
-      "current_location": []
+      "name": "",
+      "price": "",
+      "rent": ""
     }
-  ],
-  "start location": "GO!"
+  ]
 }

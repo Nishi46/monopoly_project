@@ -1,0 +1,6 @@
+(** @canonical Src.Player *)
+module Player = Src__Player
+
+
+(** @canonical Src.Property *)
+module Property = Src__Property

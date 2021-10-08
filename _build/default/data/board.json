@@ -1,0 +1,173 @@
+{
+  "property": [
+    {
+      "property_type":"normal",
+      "color" : "red",
+      "name": "Bus Stop Bagels",
+      "price": "220 BRBs",
+      "rent": "18 BRBs"
+    },
+    {
+      "property_type": "red",
+      "name": "Amit Bhatia Cafe",
+      "price": "220 BRBs",
+      "rent": "18 BRBs"
+    },
+    {
+      "property_type": "red",
+      "name": "Cafe Jennie",
+      "price": "240 BRBS",
+      "rent": "20 BRBs"
+    },
+    {
+      "property_type": "orange",
+      "name": "Okenshields",
+      "price": "200 BRBs",
+      "rent": "16 BRBs"
+    },
+    {
+      "property_type": "orange",
+      "name": "Nasties",
+      "price": "180 BRBs",
+      "rent": "14 BRBs"
+    },
+    {
+      "property_type": "orange",
+      "name": "Risley Dining Room",
+      "price": "180 BRBs",
+      "rent": "14 BRBs"
+    },
+    {
+      "property_type": "yellow",
+      "name": "Insomnia Cookies",
+      "price": "260 BRBs",
+      "rent": "22 BRBs"
+    },
+    {
+      "property_type": "yellow",
+      "name": "Pokelava",
+      "price": "260 BRBs",
+      "rent": "22 BRBs"
+    },
+    {
+      "property_type": "yellow",
+      "name": "U Tea",
+      "price": "280 BRBs",
+      "rent": "24 BRBs"
+    },
+    {
+      "property_type": "green",
+      "name": "Olin Library",
+      "price": "320 BRBs",
+      "rent": "26 BRBs"
+    },
+    {
+      "property_type": "green",
+      "name": "Uris Library",
+      "price": "320 BRBs",
+      "rent": "26 BRBs"
+    },
+    {
+      "property_type": "green",
+      "name": "Mann Library",
+      "price": "330 BRBs",
+      "rent": "28 BRBs"
+    },
+    {
+      "property_type": "light blue",
+      "name": "Statler Hotel",
+      "price": "120 BRBs",
+      "rent": "80 BRBs"
+    },
+    {
+      "property_type": "light blue",
+      "name": "Willard Straight Hall",
+      "price": "100 BRBs",
+      "rent": "60 BRBs"
+    },
+    {
+      "property_type": "light blue",
+      "name": "Schoellkopf Field",
+      "price": "100 BRBs",
+      "rent": "60 BRBs"
+    },
+    {
+      "property_type": "pink",
+      "name": "Duffield Atrium",
+      "price": "160 BRBs",
+      "rent": "12 BRBs"
+    },
+    {
+      "property_type": "pink",
+      "name": "Carpenter Hall",
+      "price": "140 BRBs",
+      "rent": "10 BRBs"
+    },
+    {
+      "property_type": "pink",
+      "name": "Upson Hall",
+      "price": "140 BRBs",
+      "rent": "10 BRBs"
+    },
+    {
+      "property_type": "blue",
+      "name": "Toni Morrison Hall",
+      "price": "250 BRBs",
+      "rent": "35 BRBs"
+    },
+    {
+      "property_type": "blue",
+      "name": "Balch Hall",
+      "price": "250 BRBs",
+      "rent": "35 BRBs"
+    },
+    {
+      "property_type": "brown",
+      "name": "Flora Rose House",
+      "price": "60 BRBs",
+      "rent": "4 BRBs"
+    },
+    {
+      "property_type": "brown",
+      "name": "Alice Cook House",
+      "price": "60 BRBs",
+      "rent": "4 BRBs"
+    },
+    {
+      "property_type": "famous",
+      "name": "Mcgraw Tower",
+      "price": "200 BRBs",
+      "rent": "25 BRBs"
+    },
+    {
+      "property_type": "famous",
+      "name": "Cornell Store",
+      "price": "200 BRBs",
+      "rent": "25 BRBs"
+    },
+    {
+      "property_type": "famous",
+      "name": "Ezra Cornell Statue",
+      "price": "200 BRBs",
+      "rent": "25 BRBs"
+    },
+    {
+      "property_type": "famous",
+      "name": "Botanical Gardens",
+      "price": "200 BRBs",
+      "rent": "25 BRBs"
+    },
+    {
+      "property_type": "nature",
+      "name": "Ithaca Falls",
+      "price": "150 BRBs",
+      "rent": "If you own one nature property, the rent is the number of the dies times 4. If you own both nature properties, the rent is the number of the dies times 10. "
+    },
+    {
+      "property_type": "nature",
+      "name": "Cayuga Lake",
+      "price": "150 BRBs",
+      "rent": "If you own one nature property, the rent is the number of the dies times 4. If you own both nature properties, the rent is the number of the dies times 10. "
+    }
+  ]
+}

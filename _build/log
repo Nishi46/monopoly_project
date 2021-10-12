@@ -1,10 +1,10 @@
 # dune build
 # OCAMLPARAM: unset
 # Workspace root: /Users/vian/cs3110/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunee36725.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunee9ae0f.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunefe4a3b.output
+$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunea6f19c.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -110,18 +110,6 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl src/player.ml) > _build/default/src/.src.objs/player.ml.d
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl src/property.ml) > _build/default/src/.src.objs/property.ml.d
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Player.cmo -c -impl src/player.ml)
-> File "src/player.ml", line 15, characters 4-24:
-> 15 | let get_current_location player = player.current_location
->          ^^^^^^^^^^^^^^^^^^^^
-> Error (warning 32 [unused-value-declaration]): unused value get_current_location.
-> File "src/player.ml", line 17, characters 4-19:
-> 17 | let get_current_amt player = player.current_amount
->          ^^^^^^^^^^^^^^^
-> Error (warning 32 [unused-value-declaration]): unused value get_current_amt.
-[2]
 $ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Property.cmo -c -impl src/property.ml)
 > File "src/property.ml", lines 8-14, characters 0-1:
 >  8 | type property = { 
@@ -133,7 +121,7 @@ $ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@
 > 14 | }
 > Error (warning 34 [unused-type-declaration]): unused type property.
 [2]
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Player.cmx -c -impl src/player.ml)
+$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Player.cmo -c -impl src/player.ml)
 > File "src/player.ml", line 15, characters 4-24:
 > 15 | let get_current_location player = player.current_location
 >          ^^^^^^^^^^^^^^^^^^^^
@@ -153,4 +141,14 @@ $ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..
 > 13 |   rent: int
 > 14 | }
 > Error (warning 34 [unused-type-declaration]): unused type property.
+[2]
+$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Player.cmx -c -impl src/player.ml)
+> File "src/player.ml", line 15, characters 4-24:
+> 15 | let get_current_location player = player.current_location
+>          ^^^^^^^^^^^^^^^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value get_current_location.
+> File "src/player.ml", line 17, characters 4-19:
+> 17 | let get_current_amt player = player.current_amount
+>          ^^^^^^^^^^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value get_current_amt.
 [2]

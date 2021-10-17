@@ -55,15 +55,15 @@ let main () =
   (* TODO: Temporarily return strings, later on change to intitialize players.*)
   match read_line () with 
   | "1" -> print_endline "You have chosen 1 player.\n"
-  | "2" -> print_endline "You have chosen 1 player.\n"
-  | "3" -> print_endline "You have chosen 1 player.\n"
-  | "4" -> print_endline "You have chosen 1 player.\n"
+  | "2" -> print_endline "You have chosen 2 players.\n"
+  | "3" -> print_endline "You have chosen 3 players.\n"
+  | "4" -> print_endline "You have chosen 4 players.\n"
   | _ -> print_endline "Invalid value. Pick a number 1-4 and press ENTER.\n";
 
   (* Welcome players and instructions. *)
   (* TODO: come up with more creative name for GO. *)
   print_endline welcome_pmpt;
- print_endline objective_pmpt;
+  print_endline objective_pmpt;
   let _ = read_line() in
   print_endline "Here’s how to play: \n";
   print_endline instructions_pmpt;

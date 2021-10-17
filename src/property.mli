@@ -1,4 +1,4 @@
-(** Representation of property data.
+(* Representation of property data.
     This module represents the property data. *)
 
 type property

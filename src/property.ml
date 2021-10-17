@@ -1,4 +1,3 @@
-
 type p_type = string
 type color = string
 

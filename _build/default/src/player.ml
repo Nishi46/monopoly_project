@@ -1,4 +1,3 @@
-
 type player_id = int
 
 type amount = int

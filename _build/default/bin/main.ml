@@ -44,41 +44,43 @@ let how_win_pmpt = "How to Win: The bankrupt players must leave the game and the
 
 (******************************************************************************)
 
-(** [main ()] starts the game. *)
+(* [main ()] starts the game. *)
 let main () = 
   print_endline
     "\nWelcome to Cornell Monopoly! Any person any building!\n";
-  print_endline "How many players? Pick a number 1-4 and press ENTER.\n";
-
-  (* Get number of players and initialize them. *)
-  (* TODO: Temporarily return strings, later on change to intitialize players.*)
-  match read_line () with 
-  | "1" -> print_endline "You have chosen 1 player.\n"
-  | "2" -> print_endline "You have chosen 1 player.\n"
-  | "3" -> print_endline "You have chosen 1 player.\n"
-  | "4" -> print_endline "You have chosen 1 player.\n"
-  | _ -> print_endline "Invalid value. Pick a number 1-4 and press ENTER.\n";
 
   (* Welcome players and instructions. *)
   (* TODO: come up with more creative name for GO. *)
-  let _ = print_endline welcome_pmpt in
-  let _ = print_endline objective_pmpt in
+  print_endline objective_pmpt;
   let _ = read_line() in
-  let _ = print_endline "Here’s how to play: \n" in
-  let _ = print_endline instructions_pmpt in
-  let _ = print_endline go_pmpt in
-  let _ = print_endline property_pmpt in
-  let _ = print_endline rent_pmpt in
+  print_endline "Here’s how to play: \n";
+  print_endline instructions_pmpt;
   let _ = read_line() in
-  let _ = print_endline chance_comm_pmpt in
-  let _ = print_endline jail_pmpt in
+  print_endline go_pmpt;
+  print_endline property_pmpt;
+  print_endline rent_pmpt;
   let _ = read_line() in
-  let _ = print_endline parking_pmpt in
-  let _ = print_endline house_hotel_pmpt in
-  let _ = print_endline bankrupt_pmpt in
+  print_endline chance_comm_pmpt;
+  print_endline jail_pmpt;
   let _ = read_line() in
-  let _ = print_endline how_win_pmpt in
+  print_endline parking_pmpt;
+  print_endline house_hotel_pmpt;
+  print_endline bankrupt_pmpt;
+  let _ = read_line() in
+  print_endline how_win_pmpt;
   let _ = read_line() in
 
-(* Execute the game engine. *)
-let () = main ()
+  print_endline "How many players? Pick a number 1-4 and press ENTER.\n";
+  print_string ">";
+  (* Get number of players and initialize them. *)
+  (* TODO: Temporarily return strings, later on change to intitialize players.*)
+  match read_line() with 
+  | "1" -> print_endline "You have chosen 1 player.\n"
+  | "2" -> print_endline "You have chosen 2 players.\n"
+  | "3" -> print_endline "You have chosen 3 players.\n"
+  | "4" -> print_endline "You have chosen 4 players.\n"
+  | _ -> print_endline "Invalid value. Pick a number 1-4 and press ENTER.\n"
+
+  (* Execute the game engine. *)
+  let () = main ()
+  let _ = print_endline welcome_pmpt

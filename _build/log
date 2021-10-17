@@ -1,10 +1,10 @@
 # dune exec bin/main.exe
 # OCAMLPARAM: unset
 # Workspace root: /Users/jessicawu/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dunef595aa.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/duneb89dac.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune6aa8eb.output
+$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune7f317a.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -113,7 +113,3 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      }
 #  }
 # Workspace root: /Users/jessicawu/monopoly_project
-$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmo -c -impl bin/main.ml)
-> File "bin/main.ml", line 84, characters 16-16:
-> Error: Syntax error
-[2]

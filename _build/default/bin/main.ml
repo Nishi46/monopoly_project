@@ -71,7 +71,7 @@ let main () =
   let _ = read_line() in
 
   print_endline "How many players? Pick a number 1-4 and press ENTER.\n";
-  print_string ">";
+  print_string "> ";
   (* Get number of players and initialize them. *)
   (* TODO: Temporarily return strings, later on change to intitialize players.*)
   match read_line() with 

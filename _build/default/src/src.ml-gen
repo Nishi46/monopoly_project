@@ -1,3 +1,7 @@
+(** @canonical Src.Author *)
+module Author = Src__Author
+
+
 (** @canonical Src.Player *)
 module Player = Src__Player
 

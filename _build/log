@@ -1,10 +1,10 @@
-# dune exec bin/main.exe
+# dune build
 # OCAMLPARAM: unset
 # Workspace root: /Users/jessicawu/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune74ade8.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune2a9d6e.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/duneee0345.output
+$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune59c2dc.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -112,4 +112,15 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      ; windows_unicode = false
 #      }
 #  }
-# Workspace root: /Users/jessicawu/monopoly_project
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Property.cmo -c -impl src/property.ml)
+> File "src/property.ml", line 1, characters 0-22:
+> 1 | open Yojson.Basic.Util
+>     ^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Yojson.Basic.Util.
+[2]
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Property.cmx -c -impl src/property.ml)
+> File "src/property.ml", line 1, characters 0-22:
+> 1 | open Yojson.Basic.Util
+>     ^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Yojson.Basic.Util.
+[2]

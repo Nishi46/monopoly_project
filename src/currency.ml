@@ -6,9 +6,11 @@ open player.ml
 let pay_rent_helper rent_payer rent_taker rent = 
   rent_payer.current_amount = rent_payer.current_amount - rent
   rent_taker.current_amount = rent_taker.current_amount + rent
+
 let pay_rent property player =
   let property_rent = property.rent in
   let player_pay_rent = if property.owner = None then (**option to buy property*)
   else pay_rent_helper player property.owner property_rent
-
-let 
+let purchase_property property player =
+    if property.owner = None then property.owner = player.id else
+    pay_rent property player

@@ -1,5 +1,5 @@
-(** @canonical Src.Author *)
-module Author = Src__Author
+(** @canonical Src.Authors *)
+module Authors = Src__Authors
 
 
 (** @canonical Src.Player *)

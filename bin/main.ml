@@ -43,6 +43,24 @@ let how_win_pmpt = "How to Win: The bankrupt players must leave the game and the
   last player left in the game is the winner. Press ENTER to continue." 
 
 (******************************************************************************)
+(* Functions *)
+
+(* [initialize_players x] takes in user input and initalizes a player type for 
+   each of [x] number of players if [x] is one of "1","2","3","4". 
+   If x is a different value, the user is prompted for another input and 
+   [initialize_players x] is called again until a valid input is provided. *)
+
+(* TODO: Temporarily return strings, later on change to intitialize players.*)
+let rec initialize_players = function
+    | "1" -> print_endline "You have chosen 1 player.\n"
+    | "2" -> print_endline "You have chosen 2 players.\n"
+    | "3" -> print_endline "You have chosen 3 players.\n"
+    | "4" -> print_endline "You have chosen 4 players.\n"
+    | _ -> 
+      print_endline "Invalid value. Pick a number 1-4 and press ENTER.";
+      let y = read_line() in initialize_players y
+
+(******************************************************************************)
 
 (* [main ()] starts the game. *)
 let main () = 
@@ -74,12 +92,7 @@ let main () =
   print_string "> ";
   (* Get number of players and initialize them. *)
   (* TODO: Temporarily return strings, later on change to intitialize players.*)
-  match read_line() with 
-  | "1" -> print_endline "You have chosen 1 player.\n"
-  | "2" -> print_endline "You have chosen 2 players.\n"
-  | "3" -> print_endline "You have chosen 3 players.\n"
-  | "4" -> print_endline "You have chosen 4 players.\n"
-  | _ -> print_endline "Invalid value. Pick a number 1-4 and press ENTER.\n"
+  let x = read_line() in initialize_players x
 
   (* Execute the game engine. *)
   let () = main ()

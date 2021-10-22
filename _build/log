@@ -1,10 +1,10 @@
 # dune build
 # OCAMLPARAM: unset
-# Workspace root: /Users/vian/cs3110/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunef6b97a.output 2> /dev/null
+# Workspace root: /Users/jessicawu/monopoly_project
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune2a9d6e.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/duneb4c255.output
+$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune59c2dc.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -14,39 +14,41 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #  ; fdo_target_exe = None
 #  ; build_dir = "default"
 #  ; toplevel_path =
-#      Some External "/Users/vian/.opam/cs3110-2021fa/lib/toplevel"
-#  ; ocaml_bin = External "/Users/vian/.opam/cs3110-2021fa/bin"
-#  ; ocaml = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocaml"
-#  ; ocamlc = External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt"
-#  ; ocamlopt = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt"
-#  ; ocamldep = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamldep.opt"
+#      Some External "/Users/jessicawu/.opam/cs3110-2021fa/lib/toplevel"
+#  ; ocaml_bin = External "/Users/jessicawu/.opam/cs3110-2021fa/bin"
+#  ; ocaml = Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocaml"
+#  ; ocamlc = External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamldep.opt"
 #  ; ocamlmklib =
-#      Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
+#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
 #  ; env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/Users/vian/.opam/cs3110-2021fa/lib"
-#        ; "DUNE_OCAML_STDLIB" : "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/Users/vian/cs3110/monopoly_project"
-#        ; "INSIDE_DUNE" : "/Users/vian/cs3110/monopoly_project/_build/default"
-#        ; "MANPATH" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/bin"
+#        { "DUNE_OCAML_HARDCODED" : "/Users/jessicawu/.opam/cs3110-2021fa/lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/jessicawu/monopoly_project"
+#        ; "INSIDE_DUNE" : "/Users/jessicawu/monopoly_project/_build/default"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib"
+#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib"
+#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib/toplevel"
+#            "/Users/jessicawu/monopoly_project/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_path = [ External "/Users/vian/.opam/cs3110-2021fa/lib" ]
+#  ; findlib_path = [ External "/Users/jessicawu/.opam/cs3110-2021fa/lib" ]
 #  ; arch_sixtyfour = true
 #  ; natdynlink_supported = true
 #  ; supports_shared_libraries = true
 #  ; ocaml_config =
 #      { version = "4.12.0"
-#      ; standard_library_default = "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
-#      ; standard_library = "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library_default =
+#          "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library = "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
 #      ; c_compiler = "cc"
@@ -73,12 +75,12 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #          ]
 #      ; native_c_libraries = [ "-lm" ]
 #      ; cc_profile = []
-#      ; architecture = "amd64"
+#      ; architecture = "arm64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
 #      ; system = "macosx"
-#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
 #      ; asm_cfi_supported = true
 #      ; with_frame_pointers = false
 #      ; ext_exe = ""
@@ -89,8 +91,8 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #      ; os_type = "Unix"
 #      ; default_executable_name = "a.out"
 #      ; systhread_supported = true
-#      ; host = "x86_64-apple-darwin20.2.0"
-#      ; target = "x86_64-apple-darwin20.2.0"
+#      ; host = "aarch64-apple-darwin20.3.0"
+#      ; target = "aarch64-apple-darwin20.3.0"
 #      ; profiling = false
 #      ; flambda = false
 #      ; spacetime = false
@@ -110,21 +112,13 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Author.cmi -c -intf src/author.mli)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Player.cmi -c -intf src/player.mli)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl src/property.ml) > _build/default/src/.src.objs/property.ml.d
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Property.cmi -c -intf src/property.mli)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Author.cmo -c -impl src/author.ml)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Player.cmo -c -impl src/Player.ml)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Property.cmo -c -impl src/property.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.src.objs/byte -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/byte/src__Property.cmo -c -impl src/property.ml)
 > File "src/property.ml", line 1, characters 0-22:
 > 1 | open Yojson.Basic.Util
 >     ^^^^^^^^^^^^^^^^^^^^^^
 > Error (warning 33 [unused-open]): unused open Yojson.Basic.Util.
 [2]
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Player.cmx -c -impl src/Player.ml)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Author.cmx -c -impl src/author.ml)
-$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Property.cmx -c -impl src/property.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.src.objs/byte -I src/.src.objs/native -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Src -o src/.src.objs/native/src__Property.cmx -c -impl src/property.ml)
 > File "src/property.ml", line 1, characters 0-22:
 > 1 | open Yojson.Basic.Util
 >     ^^^^^^^^^^^^^^^^^^^^^^

@@ -10,7 +10,7 @@ type property = {
   name: string;
   price: int;
   rent: int;
-  owner : string (* change to optional player *)
+  owner : string (* change to optional player *) (**change to player_id and int*)
 }
 
 let p_type p = p.p_type

@@ -13,5 +13,6 @@ let pay_rent property player =
   let player_pay_rent = if property.owner = None then (**option to buy property*)
   else pay_rent_helper player property.owner property_rent
 let purchase_property property player =
-    if property.owner = None then property.owner = player.id else
+    if property.owner = None then if property.price > player.current_amount then 
+    property.owner = player.id else
     pay_rent property player

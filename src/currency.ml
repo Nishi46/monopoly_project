@@ -1,7 +1,8 @@
 (* update players’ funds as they play - increase when others pay rent,
  decrease when they land on others’ property, decrease when they 
  purchase property etc.  *)
-open player.ml
+open Player
+open Property
 
 let pay_rent_helper rent_payer rent_taker rent = 
   rent_payer.current_amount = rent_payer.current_amount - rent

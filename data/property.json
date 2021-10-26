@@ -1,107 +1,67 @@
 {
   "property": [
     {
-      "property id": 1,
-      "property_type": "other",
-      "color": "",
-      "name": "GO",
-      "price": "",
-      "rent": ""
-    },
-    {
       "property id": 2,
       "property_type": "normal",
       "color": "brown",
       "name": "Flora Rose House",
-      "price": "60 BRBs",
-      "rent": "4 BRBs"
-    },
-    {
-      "property id": 3,
-      "property_type": "other",
-      "color": "",
-      "name": "Community Chest",
-      "price": "",
-      "rent": ""
+      "price": 60,
+      "rent": 4
     },
     {
       "property id": 4,
       "property_type": "normal",
       "color": "brown",
       "name": "Alice Cook House",
-      "price": "60 BRBs",
-      "rent": "4 BRBs"
-    },
-    {
-      "property id": 5,
-      "property_type": "other",
-      "color": "",
-      "name": "Income Tax",
-      "price": "",
-      "rent": ""
+      "price": 60,
+      "rent": 4
     },
     {
       "property id": 6,
       "property_type": "famous",
       "color": "",
       "name": "Mcgraw Tower",
-      "price": "200 BRBs",
-      "rent": "25 BRBs"
+      "price": 200,
+      "rent": 25
     },
     {
       "property id": 7,
       "property_type": "normal",
       "color": "light blue",
       "name": "Statler Hotel",
-      "price": "120 BRBs",
-      "rent": "80 BRBs"
-    },
-    {
-      "property id": 8,
-      "property_type": "other",
-      "color": "",
-      "name": "Chance",
-      "price": "",
-      "rent": ""
+      "price": 120,
+      "rent": 80
     },
     {
       "property id": 9,
       "property_type": "normal",
       "color": "light blue",
       "name": "Willard Straight Hall",
-      "price": "100 BRBs",
-      "rent": "60 BRBs"
+      "price": 100,
+      "rent": 60
     },
     {
       "property id": 10,
       "property_type": "normal",
       "color": "light blue",
       "name": "Schoellkopf Field",
-      "price": "100 BRBs",
-      "rent": "60 BRBs"
-    },
-    {
-      "property id": 11,
-      "property_type": "other",
-      "color": "",
-      "name": "Jail/Just Visiting",
-      "price": "",
-      "rent": ""
+      "price": 100,
+      "rent": 60
     },
     {
       "property id": 12,
       "property_type": "normal",
       "color": "pink",
       "name": "Duffield Atrium",
-      "price": "160 BRBs",
-      "rent": "12 BRBs"
+      "price": 160,
+      "rent": 12
     },
     {
       "property id": 13,
       "property_type": "nature",
       "color": "",
       "name": "Ithaca Falls",
-      "price": "150 BRBs",
+      "price": 150,
       "rent": "If you own one nature property, the rent is the number of the dies times 4. If you own both nature properties, the rent is the number of the dies times 10. "
     },
     {
@@ -109,127 +69,103 @@
       "property_type": "normal",
       "color": "pink",
       "name": "Carpenter Hall",
-      "price": "140 BRBs",
-      "rent": "10 BRBs"
+      "price": 140,
+      "rent": 10
     },
     {
       "property id": 15,
       "property_type": "normal",
       "color": "pink",
       "name": "Upson Hall",
-      "price": "140 BRBs",
-      "rent": "10 BRBs"
+      "price": 140,
+      "rent": 10
     },
     {
       "property id": 16,
       "property_type": "famous",
       "color": "",
       "name": "Cornell Store",
-      "price": "200 BRBs",
-      "rent": "25 BRBs"
+      "price": 200,
+      "rent": 25
     },
     {
       "property id": 17,
       "property_type": "normal",
       "color": "yellow",
       "name": "Insomnia Cookies",
-      "price": "260 BRBs",
-      "rent": "22 BRBs"
-    },
-    {
-      "property id": 18,
-      "property_type": "other",
-      "color": "",
-      "name": "Community Chest",
-      "price": "",
-      "rent": ""
+      "price": 260,
+      "rent": 22
     },
     {
       "property id": 19,
       "property_type": "normal",
       "color": "yellow",
       "name": "Pokelava",
-      "price": "260 BRBs",
-      "rent": "22 BRBs"
+      "price": 260,
+      "rent": 22
     },
     {
       "property id": 20,
       "property_type": "normal",
       "color": "yellow",
       "name": "U Tea",
-      "price": "280 BRBs",
-      "rent": "24 BRBs"
-    },
-    {
-      "property id": 21,
-      "property_type": "other",
-      "color": "",
-      "name": "Free Parking",
-      "price": "",
-      "rent": ""
+      "price": 280,
+      "rent": 24
     },
     {
       "property id": 22,
       "property_type": "normal",
       "color": "red",
       "name": "Bus Stop Bagels",
-      "price": "220 BRBs",
-      "rent": "18 BRBs"
-    },
-    {
-      "property id": 23,
-      "property_type": "other",
-      "color": "",
-      "name": "Chance",
-      "price": "",
-      "rent": ""
+      "price": 220,
+      "rent": 18
     },
     {
       "property id": 24,
       "property_type": "normal",
       "color": "red",
       "name": "Amit Bhatia Cafe",
-      "price": "220 BRBs",
-      "rent": "18 BRBs"
+      "price": 220,
+      "rent": 18
     },
     {
       "property id": 25,
       "property_type": "normal",
       "color": "red",
       "name": "Cafe Jennie",
-      "price": "240 BRBS",
-      "rent": "20 BRBs"
+      "price": 240,
+      "rent": 20
     },
     {
       "property id": 26,
       "property_type": "famous",
       "color": "",
       "name": "Ezra Cornell Statue",
-      "price": "200 BRBs",
-      "rent": "25 BRBs"
+      "price": 200,
+      "rent": 25
     },
     {
       "property id": 27,
       "property_type": "normal",
       "color": "orange",
       "name": "Okenshields",
-      "price": "200 BRBs",
-      "rent": "16 BRBs"
+      "price": 200,
+      "rent": 16
     },
     {
       "property id": 28,
       "property_type": "normal",
       "color": "orange",
       "name": "Nasties",
-      "price": "180 BRBs",
-      "rent": "14 BRBs"
+      "price": 180,
+      "rent": 14
     },
     {
       "property id": 29,
       "property_type": "nature",
       "color": "",
       "name": "Cayuga Lake",
-      "price": "150 BRBs",
+      "price": 150,
       "rent": "If you own one nature property, the rent is the number of the dies times 4. If you own both nature properties, the rent is the number of the dies times 10. "
     },
     {
@@ -237,88 +173,56 @@
       "property_type": "normal",
       "color": "orange",
       "name": "Risley Dining Room",
-      "price": "180 BRBs",
-      "rent": "14 BRBs"
-    },
-    {
-      "property id": 31,
-      "property_type": "other",
-      "color": "",
-      "name": "Go to Jail",
-      "price": "",
-      "rent": ""
+      "price": 180,
+      "rent": 14
     },
     {
       "property id": 32,
       "property_type": "normal",
       "color": "green",
       "name": "Olin Library",
-      "price": "320 BRBs",
-      "rent": "26 BRBs"
+      "price": 320,
+      "rent": 26
     },
     {
       "property id": 33,
       "property_type": "normal",
       "color": "green",
       "name": "Uris Library",
-      "price": "320 BRBs",
-      "rent": "26 BRBs"
-    },
-    {
-      "property id": 34,
-      "property_type": "other",
-      "color": "",
-      "name": "Community Chest",
-      "price": "",
-      "rent": ""
+      "price": 320,
+      "rent": 26
     },
     {
       "property id": 35,
       "property_type": "normal",
       "color": "green",
       "name": "Mann Library",
-      "price": "330 BRBs",
-      "rent": "28 BRBs"
+      "price": 330,
+      "rent": 28
     },
     {
       "property id": 36,
       "property_type": "famous",
       "color": "",
       "name": "Botanical Gardens",
-      "price": "200 BRBs",
-      "rent": "25 BRBs"
-    },
-    {
-      "property id": 37,
-      "property_type": "other",
-      "color": "",
-      "name": "Chance",
-      "price": "",
-      "rent": ""
+      "price": 200,
+      "rent": 25
     },
     {
       "property id": 38,
       "property_type": "normal",
       "color": "blue",
       "name": "Toni Morrison Hall",
-      "price": "250 BRBs",
-      "rent": "35 BRBs"
-    },
-    {
-      "property id": 39,
-      "property_type": "other",
-      "color": "",
-      "name": "Luxury Tax",
-      "price": "",
-      "rent": ""
+      "price": 250,
+      "rent": 35
     },
     {
       "property id": 40,
       "property_type": "normal",
       "color": "blue",
       "name": "Balch Hall",
-      "price": "250 BRBs",
-      "rent": "35 BRBs"
+      "price": 250,
+      "rent": 35
     }
   ]
 }

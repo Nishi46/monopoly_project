@@ -1,0 +1,52 @@
+{
+  "property": [
+    {
+      "property id": 3,
+      "property_type": "other",
+      "color": "",
+      "name": "Community Chest",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 8,
+      "property_type": "other",
+      "color": "",
+      "name": "Chance",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 18,
+      "property_type": "other",
+      "color": "",
+      "name": "Community Chest",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 23,
+      "property_type": "other",
+      "color": "",
+      "name": "Chance",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 34,
+      "property_type": "other",
+      "color": "",
+      "name": "Community Chest",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 37,
+      "property_type": "other",
+      "color": "",
+      "name": "Chance",
+      "price": "",
+      "rent": ""
+    }
+  ]
+}

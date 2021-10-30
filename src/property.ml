@@ -8,7 +8,7 @@ type color = string
 exception UnknownProperty of property_id
 
 type property = {
-  id : int;
+  id : property_id;
   p_type : property_type; 
   color : color;
   name: string;

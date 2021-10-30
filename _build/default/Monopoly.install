@@ -1,6 +1,5 @@
 lib: [
   "_build/install/default/lib/Monopoly/META"
-  "_build/install/default/lib/Monopoly/Player.ml"
   "_build/install/default/lib/Monopoly/authors.ml"
   "_build/install/default/lib/Monopoly/authors.mli"
   "_build/install/default/lib/Monopoly/boardspace.ml"
@@ -61,6 +60,7 @@ lib: [
   "_build/install/default/lib/Monopoly/nothing.ml"
   "_build/install/default/lib/Monopoly/nothing.mli"
   "_build/install/default/lib/Monopoly/opam"
+  "_build/install/default/lib/Monopoly/player.ml"
   "_build/install/default/lib/Monopoly/player.mli"
   "_build/install/default/lib/Monopoly/property.ml"
   "_build/install/default/lib/Monopoly/property.mli"

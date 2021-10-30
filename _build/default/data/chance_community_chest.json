@@ -1,52 +1,28 @@
 {
   "property": [
     {
-      "property id": 3,
-      "property_type": "other",
-      "color": "",
-      "name": "Community Chest",
-      "price": "",
-      "rent": ""
+      "property_id": 3,
+      "property_name": "Community Chest"
     },
     {
-      "property id": 8,
-      "property_type": "other",
-      "color": "",
-      "name": "Chance",
-      "price": "",
-      "rent": ""
+      "property_id": 8,
+      "property_name": "Chance"
     },
     {
-      "property id": 18,
-      "property_type": "other",
-      "color": "",
-      "name": "Community Chest",
-      "price": "",
-      "rent": ""
+      "property_id": 18,
+      "property_name": "Community Chest"
     },
     {
-      "property id": 23,
-      "property_type": "other",
-      "color": "",
-      "name": "Chance",
-      "price": "",
-      "rent": ""
+      "property_id": 23,
+      "property_name": "Chance"
     },
     {
-      "property id": 34,
-      "property_type": "other",
-      "color": "",
-      "name": "Community Chest",
-      "price": "",
-      "rent": ""
+      "property_id": 34,
+      "property_name": "Community Chest"
     },
     {
-      "property id": 37,
-      "property_type": "other",
-      "color": "",
-      "name": "Chance",
-      "price": "",
-      "rent": ""
+      "property_id": 37,
+      "property_name": "Chance"
     }
   ]
 }

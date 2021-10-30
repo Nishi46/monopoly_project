@@ -2,13 +2,18 @@
 module Authors = Monopoly__Authors
 
 
-<<<<<<< HEAD
 (** @canonical Monopoly.Boardspace *)
 module Boardspace = Monopoly__Boardspace
 
 
-=======
->>>>>>> b9f0f2ac09458f7ea07e3be9b514496bfe7cfcb7
+(** @canonical Monopoly.Cards *)
+module Cards = Monopoly__Cards
+
+
+(** @canonical Monopoly.Chance_cc *)
+module Chance_cc = Monopoly__Chance_cc
+
+
 (** @canonical Monopoly.Currency *)
 module Currency = Monopoly__Currency
 

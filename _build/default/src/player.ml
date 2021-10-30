@@ -10,10 +10,7 @@ type player = {
   properties : string list;
   current_location : location;
 }
-(* let create_player no_of_players = 
-  let number = int_of_string(no_of_players) in 
-  let 
- *)
+
 let get_current_location player = player.current_location
 
 let get_player_id player = player.id

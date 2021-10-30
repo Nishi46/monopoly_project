@@ -1,0 +1,13 @@
+Welcome to the Monopoly Project! This is a terminal based game based on the board game Monopoly.
+
+Usage:
+
+To play the game, you need to run the following commands:
+
+make build
+
+followed by 
+
+make play
+
+

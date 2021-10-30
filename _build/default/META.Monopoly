@@ -1,0 +1,6 @@
+description = ""
+requires = "ANSITerminal yojson"
+archive(byte) = "monopoly.cma"
+archive(native) = "monopoly.cmxa"
+plugin(byte) = "monopoly.cma"
+plugin(native) = "monopoly.cmxs"

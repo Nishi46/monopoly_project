@@ -11,12 +11,12 @@ let nothing_of_json j =
     rent = j |> member "rent" |> to_int;
     owner = None
   }
-  
+
 type p = {
     properties : property list 
   }
   
 let nothing_list_of_json j =
     {
-      properties = j |> member "properties" |> to_list |> List.map prop_of_json;
+      properties = j |> member "properties" |> to_list |> List.map nothing_of_json;
     }

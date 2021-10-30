@@ -18,11 +18,14 @@
      (visibility public)
      (impl)
      (intf))
+<<<<<<< HEAD
     ((name Boardspace)
      (obj_name monopoly__Boardspace)
      (visibility public)
      (impl)
      (intf))
+=======
+>>>>>>> b9f0f2ac09458f7ea07e3be9b514496bfe7cfcb7
     ((name Currency) (obj_name monopoly__Currency) (visibility public) (impl))
     ((name Player)
      (obj_name monopoly__Player)

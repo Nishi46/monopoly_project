@@ -63,7 +63,7 @@ let rec initialize_players = function
 (******************************************************************************)
 
 (* [main ()] starts the game. *)
-let main () = 
+let setup () = 
   print_endline
     "\nWelcome to Cornell Monopoly! Any person any building!\n";
 
@@ -95,5 +95,5 @@ let main () =
   let x = read_line() in initialize_players x
 
   (* Execute the game engine. *)
-  let () = main ()
+  let () = setup ()
   let _ = print_endline welcome_pmpt

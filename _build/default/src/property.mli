@@ -1,11 +1,15 @@
 (* Representation of property data.
     This module represents the property data. *)
+<<<<<<< HEAD
 type p
 (** The abstract type of values representing properties. *)
+=======
+>>>>>>> b9f0f2ac09458f7ea07e3be9b514496bfe7cfcb7
 
 type property
 (** The abstract type that represents a property *)
 
+<<<<<<< HEAD
 type property_type = string
 (** The type of property. *)
 
@@ -49,3 +53,31 @@ val owner : p -> property_id -> int option
 val set_owner : p -> property_id -> int -> p 
 (** [set_owner p p_id, player_id] is p where property with 
 id [p_id] is updated with owner whose id is [player_id] *)
+=======
+type p_type = string
+(** The type of property. *)
+
+type color = string
+(** The type of property color. *)
+
+val p_type : property -> p_type 
+(** [p_type p] is the property type of property [p]. *)
+
+val color : property -> color 
+(** [color p] is the color of property [p]. *)
+
+val name : property -> string
+(** [name p] is the name of property [p]. *)
+
+val price : property -> int 
+(** [price p] is the price of property [p]. *)
+
+val rent : property -> int 
+(** [rent p] is the rent of property [p]. *)
+
+val owner : property -> string 
+(** [owner p] is the owner of property [p]. *)
+
+val set_owner : property -> string -> property
+(** [set_owner p o] is the property [p] with owner o. *)
+>>>>>>> b9f0f2ac09458f7ea07e3be9b514496bfe7cfcb7

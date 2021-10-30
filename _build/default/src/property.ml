@@ -1,4 +1,5 @@
 open Yojson.Basic.Util
+<<<<<<< HEAD
 open Player
 
 type property_type = string
@@ -10,10 +11,20 @@ exception UnknownProperty of property_id
 type property = {
   id : int;
   p_type : property_type; 
+=======
+
+type p_type = string
+type color = string
+
+
+type property = { 
+  p_type : p_type; 
+>>>>>>> b9f0f2ac09458f7ea07e3be9b514496bfe7cfcb7
   color : color;
   name: string;
   price: int;
   rent: int;
+<<<<<<< HEAD
   owner : player_id option 
 }
 
@@ -77,3 +88,15 @@ let owner p p_id =
 let set_owner p p_id player_id =
   let new_properties = set_owner_helper p_id player_id p.properties 
   in {properties = new_properties}
+=======
+  owner : string (* change to optional player *) (**change to player_id and int*)
+}
+
+let p_type p = p.p_type
+let color p = p.color
+let name p = p.name
+let price p = p.price
+let rent p = p.rent 
+let owner p = p.owner 
+let set_owner p o = {p with owner = o}
+>>>>>>> b9f0f2ac09458f7ea07e3be9b514496bfe7cfcb7

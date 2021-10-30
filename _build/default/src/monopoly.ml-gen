@@ -1,0 +1,22 @@
+(** @canonical Monopoly.Authors *)
+module Authors = Monopoly__Authors
+
+
+(** @canonical Monopoly.Boardspace *)
+module Boardspace = Monopoly__Boardspace
+
+
+(** @canonical Monopoly.Currency *)
+module Currency = Monopoly__Currency
+
+
+(** @canonical Monopoly.Player *)
+module Player = Monopoly__Player
+
+
+(** @canonical Monopoly.Property *)
+module Property = Monopoly__Property
+
+
+(** @canonical Monopoly.Roll_the_die *)
+module Roll_the_die = Monopoly__Roll_the_die

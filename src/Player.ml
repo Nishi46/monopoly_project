@@ -13,12 +13,6 @@ type player = {
   properties : string list;
   current_location : property_id;
 }
-<<<<<<< HEAD
-(* let create_player no_of_players = 
-  let number = int_of_string(no_of_players) in 
-  let 
- *)
-=======
 
 let create_player_record_helper number = 
   {id= number; current_amount = 1500; properties = []; current_location = 1}
@@ -29,7 +23,6 @@ let create_player_record no_of_players acc =
 
 let player_records_list number acc = 
   create_player_record number []
->>>>>>> be04d4189f0411a9d1737dfdf8a48c3a571d1e73
 let get_current_location player = player.current_location
 
 let get_player_id player = player.id

@@ -53,7 +53,12 @@
     ((name Roll_the_die)
      (obj_name monopoly__Roll_the_die)
      (visibility public)
-     (impl)))
+     (impl))
+    ((name State)
+     (obj_name monopoly__State)
+     (visibility public)
+     (impl)
+     (intf)))
    (alias_module
     (name Monopoly)
     (obj_name monopoly)

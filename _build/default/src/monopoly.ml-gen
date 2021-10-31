@@ -36,3 +36,7 @@ module Property = Monopoly__Property
 
 (** @canonical Monopoly.Roll_the_die *)
 module Roll_the_die = Monopoly__Roll_the_die
+
+
+(** @canonical Monopoly.State *)
+module State = Monopoly__State

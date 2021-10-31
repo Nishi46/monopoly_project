@@ -57,6 +57,10 @@ lib: [
   "_build/install/default/lib/Monopoly/monopoly__Roll_the_die.cmi"
   "_build/install/default/lib/Monopoly/monopoly__Roll_the_die.cmt"
   "_build/install/default/lib/Monopoly/monopoly__Roll_the_die.cmx"
+  "_build/install/default/lib/Monopoly/monopoly__State.cmi"
+  "_build/install/default/lib/Monopoly/monopoly__State.cmt"
+  "_build/install/default/lib/Monopoly/monopoly__State.cmti"
+  "_build/install/default/lib/Monopoly/monopoly__State.cmx"
   "_build/install/default/lib/Monopoly/nothing.ml"
   "_build/install/default/lib/Monopoly/nothing.mli"
   "_build/install/default/lib/Monopoly/opam"
@@ -65,6 +69,8 @@ lib: [
   "_build/install/default/lib/Monopoly/property.ml"
   "_build/install/default/lib/Monopoly/property.mli"
   "_build/install/default/lib/Monopoly/roll_the_die.ml"
+  "_build/install/default/lib/Monopoly/state.ml"
+  "_build/install/default/lib/Monopoly/state.mli"
 ]
 libexec: [
   "_build/install/default/lib/Monopoly/monopoly.cmxs"

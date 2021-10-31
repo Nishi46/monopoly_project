@@ -1,1 +1,1 @@
-src/state.ml: Player Property
+src/state.ml: Boardspace Player Property

@@ -1,1 +1,3 @@
 (** Jail module *)
+
+type jail

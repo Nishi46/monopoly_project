@@ -1,0 +1,20 @@
+{
+  "properties": [
+    {
+      "property id": 2,
+      "property_type": "normal",
+      "color": "brown",
+      "name": "Flora Rose House",
+      "price": 60,
+      "rent": 4
+    },
+    {
+      "property id": 4,
+      "property_type": "normal",
+      "color": "brown",
+      "name": "Alice Cook House",
+      "price": 60,
+      "rent": 4
+    }
+  ]
+}

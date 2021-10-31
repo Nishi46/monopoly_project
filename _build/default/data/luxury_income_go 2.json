@@ -1,0 +1,28 @@
+{
+  "property": [
+    {
+      "property id": 1,
+      "property_type": "other",
+      "color": "",
+      "name": "GO",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 5,
+      "property_type": "other",
+      "color": "",
+      "name": "Income Tax",
+      "price": "",
+      "rent": ""
+    },
+    {
+      "property id": 39,
+      "property_type": "other",
+      "color": "",
+      "name": "Luxury Tax",
+      "price": "",
+      "rent": ""
+    }
+  ]
+}

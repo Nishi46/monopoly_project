@@ -1,1 +1,1 @@
-src/boardspace.ml: Chance_cc Property
+src/boardspace.ml: Chancecc Property

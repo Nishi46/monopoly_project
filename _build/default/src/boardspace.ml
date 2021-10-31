@@ -1,5 +1,5 @@
 open Property 
-open Chance_cc
+open Chancecc
 
 type board_space = 
 | Property of property 

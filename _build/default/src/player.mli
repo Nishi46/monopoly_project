@@ -1,6 +1,6 @@
 (* Representation of player data.
     This module represents the player data. *)
-
+open Property
 type player
 (** The abstract type that represents a player. *)
 
@@ -10,10 +10,7 @@ type player_id = int
 type amount = int
 (** The type of the amount that each player has. *)
 
-type location = string
-(** The type of the location on the board. *)
-
-val get_current_location : player -> location
+val get_current_location : player -> property_id
 (** [get_current_location player] returns the current location
  of the player on the board. *)
 

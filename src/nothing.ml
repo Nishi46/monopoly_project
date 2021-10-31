@@ -29,5 +29,3 @@ let nothing_list_of_json j =
     {
       properties = j |> member "property" |> to_list |> List.map nothing_of_json;
     }
-    
-let from_json json = nothing_of_json json

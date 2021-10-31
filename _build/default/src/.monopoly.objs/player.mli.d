@@ -1,1 +1,1 @@
-src/player.mli:
+src/player.mli: Property

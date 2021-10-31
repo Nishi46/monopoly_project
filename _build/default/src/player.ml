@@ -1,9 +1,9 @@
-open Property 
+open Property
+
 type player_id = int
 
 type amount = int
 
-type location = string
 
 exception InvalidPlayerNumber
 

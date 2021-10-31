@@ -1,5 +1,3 @@
-open Property
-
 type player_id = int
 
 type amount = int
@@ -11,7 +9,7 @@ type player = {
   id : player_id;
   current_amount : amount;
   properties : string list;
-  current_location : property_id;
+  current_location : int;
 }
 
 let create_player_record_helper number = 

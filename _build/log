@@ -1,10 +1,10 @@
 # dune build
 # OCAMLPARAM: unset
-# Workspace root: /Users/jessicawu/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune2962d0.output 2> /dev/null
+# Workspace root: /Users/anoushkakabra/Documents/GitHub/monopoly_project
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vq/w60k87854f50m56p80jplrsm0000gn/T/duneddca94.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune7ff957.output
+$ /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vq/w60k87854f50m56p80jplrsm0000gn/T/dune369acc.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -14,41 +14,49 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #  ; fdo_target_exe = None
 #  ; build_dir = "default"
 #  ; toplevel_path =
-#      Some External "/Users/jessicawu/.opam/cs3110-2021fa/lib/toplevel"
-#  ; ocaml_bin = External "/Users/jessicawu/.opam/cs3110-2021fa/bin"
-#  ; ocaml = Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocaml"
-#  ; ocamlc = External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt"
+#      Some External "/Users/anoushkakabra/.opam/cs3110-2021fa/lib/toplevel"
+#  ; ocaml_bin = External "/Users/anoushkakabra/.opam/cs3110-2021fa/bin"
+#  ; ocaml = Ok External "/Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocaml"
+#  ; ocamlc =
+#      External "/Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt"
 #  ; ocamlopt =
-#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt"
+#      Ok External "/Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt"
 #  ; ocamldep =
-#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamldep.opt"
+#      Ok External "/Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamldep.opt"
 #  ; ocamlmklib =
-#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
+#      Ok
+#        External "/Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
 #  ; env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/Users/jessicawu/.opam/cs3110-2021fa/lib"
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/Users/anoushkakabra/.opam/cs3110-2021fa/lib"
 #        ; "DUNE_OCAML_STDLIB" :
-#            "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/Users/jessicawu/monopoly_project"
-#        ; "INSIDE_DUNE" : "/Users/jessicawu/monopoly_project/_build/default"
+#            "/Users/anoushkakabra/.opam/cs3110-2021fa/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/Users/anoushkakabra/Documents/GitHub/monopoly_project"
+#        ; "INSIDE_DUNE" :
+#            "/Users/anoushkakabra/Documents/GitHub/monopoly_project/_build/default"
+#        ; "MANPATH" :
+#            "/Users/anoushkakabra/Documents/GitHub/monopoly_project/_build/install/default/bin"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
+#            "/Users/anoushkakabra/Documents/GitHub/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
+#            "/Users/anoushkakabra/Documents/GitHub/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/jessicawu/monopoly_project/_build/install/default/lib/toplevel"
+#            "/Users/anoushkakabra/Documents/GitHub/monopoly_project/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_path = [ External "/Users/jessicawu/.opam/cs3110-2021fa/lib" ]
+#  ; findlib_path = [ External "/Users/anoushkakabra/.opam/cs3110-2021fa/lib" ]
 #  ; arch_sixtyfour = true
 #  ; natdynlink_supported = true
 #  ; supports_shared_libraries = true
 #  ; ocaml_config =
 #      { version = "4.12.0"
 #      ; standard_library_default =
-#          "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
-#      ; standard_library = "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
+#          "/Users/anoushkakabra/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library =
+#          "/Users/anoushkakabra/.opam/cs3110-2021fa/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
 #      ; c_compiler = "cc"
@@ -75,12 +83,12 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #          ]
 #      ; native_c_libraries = [ "-lm" ]
 #      ; cc_profile = []
-#      ; architecture = "arm64"
+#      ; architecture = "amd64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
 #      ; system = "macosx"
-#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
 #      ; asm_cfi_supported = true
 #      ; with_frame_pointers = false
 #      ; ext_exe = ""
@@ -91,8 +99,8 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      ; os_type = "Unix"
 #      ; default_executable_name = "a.out"
 #      ; systhread_supported = true
-#      ; host = "aarch64-apple-darwin20.3.0"
-#      ; target = "aarch64-apple-darwin20.3.0"
+#      ; host = "x86_64-apple-darwin19.4.0"
+#      ; target = "x86_64-apple-darwin19.4.0"
 #      ; profiling = false
 #      ; flambda = false
 #      ; spacetime = false
@@ -112,6 +120,26 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl src/boardspace.ml) > _build/default/src/.monopoly.objs/boardspace.ml.d
-$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I src/.monopoly.objs/byte -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/byte/monopoly__Boardspace.cmo -c -impl src/boardspace.ml)
-$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/native/monopoly__Boardspace.cmx -c -impl src/boardspace.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -intf src/player.mli) > _build/default/src/.monopoly.objs/player.mli.d
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl src/Player.ml) > _build/default/src/.monopoly.objs/Player.ml.d
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I src/.monopoly.objs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/byte/monopoly__Player.cmi -c -intf src/player.mli)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I src/.monopoly.objs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/byte/monopoly__Player.cmo -c -impl src/Player.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I src/.monopoly.objs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/byte/monopoly__Currency.cmo -c -impl src/currency.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I src/.monopoly.objs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/byte/monopoly__State.cmo -c -impl src/state.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I src/.monopoly.objs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/byte/monopoly__Property.cmo -c -impl src/property.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -a -o src/monopoly.cma src/.monopoly.objs/byte/monopoly.cmo src/.monopoly.objs/byte/monopoly__Chancecc.cmo src/.monopoly.objs/byte/monopoly__Player.cmo src/.monopoly.objs/byte/monopoly__Property.cmo src/.monopoly.objs/byte/monopoly__Boardspace.cmo src/.monopoly.objs/byte/monopoly__State.cmo src/.monopoly.objs/byte/monopoly__Roll_the_die.cmo src/.monopoly.objs/byte/monopoly__Nothing.cmo src/.monopoly.objs/byte/monopoly__Jail.cmo src/.monopoly.objs/byte/monopoly__Currency.cmo src/.monopoly.objs/byte/monopoly__Cards.cmo src/.monopoly.objs/byte/monopoly__Authors.cmo)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/native/monopoly__Player.cmx -c -impl src/Player.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/native/monopoly__State.cmx -c -impl src/state.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/native/monopoly__Property.cmx -c -impl src/property.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Monopoly -o src/.monopoly.objs/native/monopoly__Currency.cmx -c -impl src/currency.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -a -o src/monopoly.cmxa src/.monopoly.objs/native/monopoly.cmx src/.monopoly.objs/native/monopoly__Chancecc.cmx src/.monopoly.objs/native/monopoly__Player.cmx src/.monopoly.objs/native/monopoly__Property.cmx src/.monopoly.objs/native/monopoly__Boardspace.cmx src/.monopoly.objs/native/monopoly__State.cmx src/.monopoly.objs/native/monopoly__Roll_the_die.cmx src/.monopoly.objs/native/monopoly__Nothing.cmx src/.monopoly.objs/native/monopoly__Jail.cmx src/.monopoly.objs/native/monopoly__Currency.cmx src/.monopoly.objs/native/monopoly__Cards.cmx src/.monopoly.objs/native/monopoly__Authors.cmx)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I test/.main.eobjs/byte -no-alias-deps -opaque -o test/.main.eobjs/byte/dune__exe.cmo -c -impl test/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I test/.main.eobjs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2 -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -no-alias-deps -opaque -open Dune__exe -o test/.main.eobjs/byte/dune__exe__Chance_cc_tests.cmo -c -impl test/chance_cc_tests.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I test/.main.eobjs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2 -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -no-alias-deps -opaque -open Dune__exe -o test/.main.eobjs/byte/dune__exe__Property_tests.cmo -c -impl test/property_tests.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I test/.main.eobjs/byte -I test/.main.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o test/.main.eobjs/native/dune__exe.cmx -c -impl test/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I test/.main.eobjs/byte -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2 -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -no-alias-deps -opaque -open Dune__exe -o test/.main.eobjs/byte/dune__exe__Main.cmo -c -impl test/main.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -shared -linkall -I src -o src/monopoly.cmxs src/monopoly.cmxa)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I test/.main.eobjs/byte -I test/.main.eobjs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2 -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o test/.main.eobjs/native/dune__exe__Chance_cc_tests.cmx -c -impl test/chance_cc_tests.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I test/.main.eobjs/byte -I test/.main.eobjs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2 -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o test/.main.eobjs/native/dune__exe__Main.cmx -c -impl test/main.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I test/.main.eobjs/byte -I test/.main.eobjs/native -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/bytes -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2 -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o test/.main.eobjs/native/dune__exe__Property_tests.cmx -c -impl test/property_tests.ml)
+$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -o test/main.exe /Users/anoushkakabra/.opam/cs3110-2021fa/lib/easy-format/easy_format.cmxa /Users/anoushkakabra/.opam/cs3110-2021fa/lib/biniou/biniou.cmxa /Users/anoushkakabra/.opam/cs3110-2021fa/lib/yojson/yojson.cmxa /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ocaml/unix.cmxa -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ocaml /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal/ANSITerminal.cmxa -I /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ANSITerminal src/monopoly.cmxa /Users/anoushkakabra/.opam/cs3110-2021fa/lib/stdlib-shims/stdlib_shims.cmxa /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/advanced/oUnitAdvanced.cmxa /Users/anoushkakabra/.opam/cs3110-2021fa/lib/ounit2/oUnit.cmxa test/.main.eobjs/native/dune__exe.cmx test/.main.eobjs/native/dune__exe__Chance_cc_tests.cmx test/.main.eobjs/native/dune__exe__Property_tests.cmx test/.main.eobjs/native/dune__exe__Main.cmx)

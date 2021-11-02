@@ -1,1 +1,1 @@
-bin/functions.ml: Monopoly Player Prompts
+bin/functions.ml: List Monopoly Player Prompts

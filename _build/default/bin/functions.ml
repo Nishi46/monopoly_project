@@ -62,4 +62,6 @@ let initialize () =
    let user_input = get_player_input x in
    (* TODO: Temporarily store list of players here, move somewhere else later.*)
    let players = Player.player_records_list user_input in
-   print_endline ("You have chosen " ^ user_input ^ " players.\n")
+   print_endline ("You have chosen " ^ user_input ^ " players.\n");
+   let length = players |> List.length |> string_of_int in
+   print_endline ("There are " ^ length ^ " player records.")

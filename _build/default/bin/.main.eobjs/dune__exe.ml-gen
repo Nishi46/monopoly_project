@@ -1,0 +1,10 @@
+(** @canonical Dune__exe.Functions *)
+module Functions = Dune__exe__Functions
+
+
+(** @canonical Dune__exe.Main *)
+module Main = Dune__exe__Main
+
+
+(** @canonical Dune__exe.Prompts *)
+module Prompts = Dune__exe__Prompts

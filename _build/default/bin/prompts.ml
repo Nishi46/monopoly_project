@@ -1,6 +1,6 @@
 (* The file store the prompts that will be displayed to the user during the game. *)
 
-(* Setup Stage Prompts *)
+(* Setup and Initialize Prompts *)
 let welcome_pmpt = "Welcome players! You each have 1500 BRBs in your GET account. 
   You will each start at GO.\n"
 let objective_pmpt = "Objective of the Game: Become the wealthiest player through 
@@ -33,3 +33,5 @@ let bankrupt_pmpt = "Bankruptcy : You are declared bankrupt if you owe more than
   you can pay to another player or to the bank.Press ENTER to continue."
 let how_win_pmpt = "How to Win: The bankrupt players must leave the game and the 
   last player left in the game is the winner. Press ENTER to continue." 
+
+(* Game Begin Prompts*)

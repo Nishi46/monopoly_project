@@ -60,5 +60,6 @@ let initialize () =
    (* Get number of players and initialize them. *)
    let x = read_line() in 
    let user_input = get_player_input x in
+   (* TODO: Temporarily store list of players here, move somewhere else later.*)
    let players = Player.player_records_list user_input in
    print_endline ("You have chosen " ^ user_input ^ " players.\n")

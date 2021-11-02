@@ -1,3 +1,7 @@
+(** @canonical Dune__exe.Board_print *)
+module Board_print = Dune__exe__Board_print
+
+
 (** @canonical Dune__exe.Functions *)
 module Functions = Dune__exe__Functions
 

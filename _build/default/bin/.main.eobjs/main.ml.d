@@ -1,1 +1,1 @@
-bin/main.ml: Functions Prompts
+bin/main.ml: Functions Monopoly Player Prompts

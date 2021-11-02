@@ -1,23 +1,25 @@
+open Monopoly
 open Prompts
+open Player
 
 (* This file stores all the game helper and execution functions needed to run 
    the game. *)
 
 (* Helper Functions *)
 
-(* [initialize_players x] takes in user input and initalizes a player type for 
-   each of [x] number of players if [x] is one of "1","2","3","4". 
-   If x is a different value, the user is prompted for another input and 
-   [initialize_players x] is called again until a valid input is provided. *)
+(* [get_player_input x] takes in user input. If [x] is one of "1","2","3","4" 
+   [get_player_input x] returns x. If x is a different value, the user is 
+   prompted for another input and [get_player_input x] is called again until 
+   a valid input is provided.*)
+let rec get_player_input = function 
+   | "2" -> "2"
+   | "3" -> "3"
+   | "4" -> "4"
+   | _ -> 
+      print_endline "Invalid value. Pick a number 1-4 and press ENTER.";
+      let y = read_line() in get_player_input y
 
 (* TODO: Temporarily return strings, later on change to intitialize players.*)
-let rec initialize_players = function
-    | "2" -> print_endline "You have chosen 2 players.\n"
-    | "3" -> print_endline "You have chosen 3 players.\n"
-    | "4" -> print_endline "You have chosen 4 players.\n"
-    | _ -> 
-      print_endline "Invalid value. Pick a number 1-4 and press ENTER.";
-      let y = read_line() in initialize_players y
 
 (******************************************************************************)
 
@@ -28,6 +30,8 @@ let rec initialize_players = function
 let setup () = 
    print_endline
      "\nWelcome to Cornell Monopoly! Any person any building!\n";
+   print_endline
+     "Please play with full screen to get the best experience.\n";
  
    (* Welcome players and instructions. *)
    (* TODO: come up with more creative name for GO. *)
@@ -47,11 +51,14 @@ let setup () =
    print_endline house_hotel_pmpt;
    print_endline bankrupt_pmpt;
    let _ = read_line() in
-   print_endline how_win_pmpt;
+   print_endline how_win_pmpt
+   
+let initialize () = 
    let _ = read_line() in
- 
    print_endline "How many players? Pick a number 2-4 and press ENTER.\n";
    print_string "> ";
    (* Get number of players and initialize them. *)
-   (* TODO: Temporarily return strings, later on change to intitialize players.*)
-   let x = read_line() in initialize_players x
+   let x = read_line() in 
+   let user_input = get_player_input x in
+   let players = Player.player_records_list user_input in
+   print_endline ("You have chosen " ^ user_input ^ " players.\n")

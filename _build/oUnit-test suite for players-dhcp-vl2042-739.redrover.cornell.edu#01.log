@@ -1,0 +1,10 @@
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 I: Start test test suite for players:0:test1 for player id.
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 E: Test test suite for players:0:test1 for player id has failed.
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 E: not equal in test test suite for players:0:test1 for player id.
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 E: 
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 I: End test test suite for players:0:test1 for player id.
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 I: Start test test suite for players:2:test1 for current_location.
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 I: Test test suite for players:2:test1 for current_location is successful.
+2021-11-03T20:03:03+00:00 dhcp-vl2042-739.redrover.cornell.edu#01 I: End test test suite for players:2:test1 for current_location.

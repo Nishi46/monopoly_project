@@ -6,8 +6,8 @@ module Chance_cc_tests = Dune__exe__Chance_cc_tests
 module Main = Dune__exe__Main
 
 
-(** @canonical Dune__exe.Player_test *)
-module Player_test = Dune__exe__Player_test
+(** @canonical Dune__exe.Player_tests *)
+module Player_tests = Dune__exe__Player_tests
 
 
 (** @canonical Dune__exe.Property_tests *)

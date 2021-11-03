@@ -1,10 +1,10 @@
 # dune exec test/main.exe
 # OCAMLPARAM: unset
 # Workspace root: /Users/anoushkakabra/Documents/GitHub/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vq/w60k87854f50m56p80jplrsm0000gn/T/dune388672.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vq/w60k87854f50m56p80jplrsm0000gn/T/duneaae5c2.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vq/w60k87854f50m56p80jplrsm0000gn/T/dune633d1c.output
+$ /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vq/w60k87854f50m56p80jplrsm0000gn/T/dunecdf6a3.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -121,4 +121,3 @@ $ /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders
 #      }
 #  }
 # Workspace root: /Users/anoushkakabra/Documents/GitHub/monopoly_project
-$ (cd _build/default && /Users/anoushkakabra/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl test/player_test.ml) > _build/default/test/.main.eobjs/player_test.ml.d

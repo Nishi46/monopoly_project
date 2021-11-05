@@ -38,10 +38,10 @@ let rec get_prop_by_id p_id = function
 
 let nothing_id prop = prop.id
 
-let p_type p p_id =
+let nothing_type p p_id =
   let prop = get_prop_by_id p_id p.properties in
   prop.p_type
-let color p p_id =
+let nothing_color p p_id =
   let prop = get_prop_by_id p_id p.properties in
   prop.color
 let name p p_id =

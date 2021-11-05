@@ -30,7 +30,8 @@ match no_of_players with
 
 let player_records_list number = 
   let num = int_of_string number in
-  create_player_record num []
+  create_player_record num [] |>
+  List.rev
 
 (* Initialize Player Function End *)
 
@@ -41,3 +42,5 @@ let get_player_id player = player.id
 let get_all_properties player = player.properties
 
 let get_current_amt player = player.current_amount
+
+(** str function for representation of the player  *)

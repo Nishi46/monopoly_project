@@ -1,5 +1,5 @@
 open Yojson.Basic.Util
-
+open Property
 type property_id = int
 type property_type = string
 type nothing = {
@@ -31,3 +31,25 @@ let nothing_list_of_json j =
     }
 
 let from_json json = nothing_list_of_json json 
+
+let rec get_prop_by_id p_id = function
+  | [] -> raise (UnknownProperty p_id)
+  | h :: t -> if h.id = p_id then h else get_prop_by_id p_id t
+
+let nothing_id prop = prop.id
+
+let p_type p p_id =
+  let prop = get_prop_by_id p_id p.properties in
+  prop.p_type
+let color p p_id =
+  let prop = get_prop_by_id p_id p.properties in
+  prop.color
+let name p p_id =
+  let prop = get_prop_by_id p_id p.properties in
+  prop.name
+let price p p_id =
+  let prop = get_prop_by_id p_id p.properties in
+  prop.price
+let rent p p_id =
+  let prop = get_prop_by_id p_id p.properties in
+  prop.rent

@@ -10,7 +10,7 @@ let player_id_test
 (indv_player: player)
 (expected_output : int) : test =
 name >:: fun _ -> 
-assert_equal expected_output (get_player_id indv_player)
+assert_equal expected_output (get_player_id indv_player)  ~printer: string_of_int 
 
 let player_current_amt_test
 (name : string)
@@ -54,7 +54,7 @@ let third_player (lst : player list) =
     | [] -> raise EmptyList
     | h :: s :: t -> s *)
 let player_tests =[
-  player_id_test "test1 for player id" (first_player test_player_records_1) 1; 
+  player_id_test "test1 for player id" (first_player test_player_records_2) 1; 
   (* player_id_test "test2 for player id" (second_player test_player_records_2) 2; *)
   player_current_amt_test "test1 for player amount" (first_player test_player_records_1) 1500;
   player_current_location_test "test1 for current_location" (first_player test_player_records_1) 1;

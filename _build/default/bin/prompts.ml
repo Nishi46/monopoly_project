@@ -34,4 +34,5 @@ let bankrupt_pmpt = "Bankruptcy : You are declared bankrupt if you owe more than
 let how_win_pmpt = "How to Win: The bankrupt players must leave the game and the 
   last player left in the game is the winner. Press ENTER to continue." 
 
+let do_you_want_to_buy_pmpt = "Do you want to buy this property"
 (* Game Begin Prompts*)

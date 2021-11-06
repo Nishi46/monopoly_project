@@ -1,28 +1,16 @@
 {
   "property": [
     {
-      "property id": 1,
-      "property_type": "other",
-      "color": "",
-      "name": "GO",
-      "price": "",
-      "rent": ""
+      "property_id": 1,
+      "property_name": "GO"
     },
     {
-      "property id": 5,
-      "property_type": "other",
-      "color": "",
-      "name": "Income Tax",
-      "price": "",
-      "rent": ""
+      "property_id": 5,
+      "property_name": "Income Tax"
     },
     {
-      "property id": 39,
-      "property_type": "other",
-      "color": "",
-      "name": "Luxury Tax",
-      "price": "",
-      "rent": ""
+      "property_id": 39,
+      "property_name": "Luxury Tax"
     }
   ]
 }

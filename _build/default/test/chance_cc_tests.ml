@@ -19,8 +19,8 @@ let cmp_set_like_lists lst1 lst2 =
 let from_json_test
 (name : string)
 (json : Yojson.Basic.t)
-(expected_output : Property.p) : test = 
-name >:: fun _ -> assert_equal expected_output (Property.from_json json)
+(expected_output : Chancecc.c) : test = 
+name >:: fun _ -> assert_equal expected_output (Chancecc.from_json json)
 
 let properties_test
 (name : string)

@@ -22,6 +22,10 @@ module Currency = Monopoly__Currency
 module Jail = Monopoly__Jail
 
 
+(** @canonical Monopoly.Luxury_income_go *)
+module Luxury_income_go = Monopoly__Luxury_income_go
+
+
 (** @canonical Monopoly.Move *)
 module Move = Monopoly__Move
 

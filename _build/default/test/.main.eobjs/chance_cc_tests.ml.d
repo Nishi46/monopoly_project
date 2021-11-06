@@ -1,1 +1,1 @@
-test/chance_cc_tests.ml: Chancecc List Monopoly OUnit2 Property Yojson
+test/chance_cc_tests.ml: Chancecc List Monopoly OUnit2 Yojson

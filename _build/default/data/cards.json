@@ -90,5 +90,97 @@
       "card_message": "Advance to Pokelava.",
       "card_action": "move pokelava"
     }
+  ],
+  "community chest": [
+    {
+      "card_id": 1,
+      "card_name": "Your friend finally returned the money they borrowed from you.",
+      "card_message": "Collect 100 BRBs profit.",
+      "card_action": "collect 100"
+    },
+    {
+      "card_id": 2,
+      "card_name": "Cornell increased tuition.",
+      "card_message": "Pay Cornell 500 BRBs",
+      "card_action": "lose 50"
+    },
+    {
+      "card_id": 3,
+      "card_name": "You sold your old linear algebra textbook.",
+      "card_message": "Collect 250 BRBs profit.",
+      "card_action": "collect 250"
+    },
+    {
+      "card_id": 4,
+      "card_name": "You got your paycheck for being a 1110 Consultant.",
+      "card_message": "Collect 100 BRBs profit.",
+      "card_action": "collect 100"
+    },
+    {
+      "card_id": 5,
+      "card_name": "You received you financial aid!",
+      "card_message": "Collect 500 BRBs profit.",
+      "card_action": "collect 500"
+    },
+    {
+      "card_id": 6,
+      "card_name": "Get out of Jail Free!",
+      "card_message": "You get out of Jail free! This card may be kept until needed.",
+      "card_action": "move visiting"
+    },
+    {
+      "card_id": 7,
+      "card_name": "Today is your lucky day!",
+      "card_message": "Advance to GO.",
+      "card_action": "move go"
+    },
+    {
+      "card_id": 8,
+      "card_name": "You win your club's raffle ticket",
+      "card_message": "Collect 200 BRBs profit",
+      "card_action": "collect 200"
+    },
+    {
+      "card_id": 9,
+      "card_name": "You signed up for a PE class",
+      "card_message": "Pay the 100 BRBs fee.",
+      "card_action": "pay 100"
+    },
+    {
+      "card_id": 10,
+      "card_name": "You were caught for AI violation!",
+      "card_message": "Go to jail. Do not collect money if you pass GO.",
+      "card_action": "move jail"
+    },
+    {
+      "card_id": 11,
+      "card_name": "You want to buy a Canada Goose jacket",
+      "card_message": "Pay 150 BRBs.",
+      "card_action": "pay 150"
+    },
+    {
+      "card_id": 12,
+      "card_name": "You are hungry so you order sushi on Doordash.",
+      "card_message": "Pay 50 BRBs.",
+      "card_action": "pay 30"
+    },
+    {
+      "card_id": 13,
+      "card_name": "You treat all you friends to dinner.",
+      "card_message": "Pay 75 BRBs for the meal.",
+      "card_action": "pay 75"
+    },
+    {
+      "card_id": 14,
+      "card_name": "You have to pay your meal plan for the semester.",
+      "card_message": "Pay 150 BRBs.",
+      "card_action": "pay 150"
+    },
+    {
+      "card_id": 15,
+      "card_name": "You win a bet with your friends!",
+      "card_message": "Collect 25 BRBs from each player.",
+      "card_action": "collect all 25"
+    }
   ]
 }

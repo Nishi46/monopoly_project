@@ -2,6 +2,10 @@
 module Chance_cc_tests = Dune__exe__Chance_cc_tests
 
 
+(** @canonical Dune__exe.Luxury_income_go_tests *)
+module Luxury_income_go_tests = Dune__exe__Luxury_income_go_tests
+
+
 (** @canonical Dune__exe.Main *)
 module Main = Dune__exe__Main
 

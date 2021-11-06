@@ -28,11 +28,12 @@ val id : chance_cc_space -> property_id
 (** [id s] is the space id of the chance or community chest space. *)
 
 val name : c -> property_id -> string
-(** [name s p_id] is the space name of the chance or community chest space. *)
+(** [name c p_id] is the space name of the chance or community chest space. *)
 
-val is_chance : chance_cc_space -> bool
-(** [is_chance s] returns whether or not the space is a chance space. *)
+val is_chance : c -> property_id -> bool
+(** [is_chance c p_id] returns whether or not the space with the is a chance 
+    corresponding [p_id] is a chance space. *)
 
-val is_cc : chance_cc_space -> bool
-(** [is_cc s] returns whether or not the space is a commmunity chest space. *)
-    
+val is_cc : c -> property_id -> bool
+(** [is_cc c p_id] returns whether or not the space with the is a chance 
+    corresponding [p_id] is a community chest space. *)

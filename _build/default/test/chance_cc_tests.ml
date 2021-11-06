@@ -48,6 +48,24 @@ name >:: fun _ ->
 assert_equal ~printer: string_of_int
 expected_output (Chancecc.id prop)
 
+let is_chance_test
+(name : string)
+(c : Chancecc.c)
+(p_id : Chancecc.property_id)
+(expected_output : bool) : test =
+name >:: fun _ ->
+assert_equal ~printer: string_of_bool
+expected_output (Chancecc.is_chance c p_id)
+
+let is_cc_test
+(name : string)
+(c : Chancecc.c)
+(p_id : Chancecc.property_id)
+(expected_output : bool) : test =
+name >:: fun _ ->
+assert_equal ~printer: string_of_bool
+expected_output (Chancecc.is_cc c p_id)
+
 let c = Chancecc.from_json (Yojson.Basic.from_file "data/chance_community_chest.json")
 
 let chance_cc_tests = [
@@ -55,6 +73,10 @@ let chance_cc_tests = [
   chancecc_id_test "id test 2" c ( c |> Chancecc.properties |> List.rev |> List.hd) 37;
   chancecc_name_test "name test 1" c 18 "Community Chest";
   chancecc_name_test "name test 2" c 23 "Chance";
+  is_chance_test "is chance true test" c 8 true;
+  is_chance_test "is chance false test" c 3 false;
+  is_cc_test "is cc true test" c 18 true;
+  is_cc_test "is cc false test" c 23 false;
 ]
 
 let suite =

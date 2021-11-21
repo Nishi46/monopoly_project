@@ -1,6 +1,7 @@
 (** Jail module *)
 open Property
 open Yojson.Basic.Util
+
 type jail = {
   id : property_id;
   property_type : property_type; 

@@ -1,10 +1,10 @@
-# dune exec test/main.exe
+# dune utop
 # OCAMLPARAM: unset
-# Workspace root: /Users/jessicawu/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/duneb8bb80.output 2> /dev/null
+# Workspace root: /Users/vian/cs3110/monopoly_project
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/duneda6c3e.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune3f2c52.output
+$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunef217fd.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -14,41 +14,39 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #  ; fdo_target_exe = None
 #  ; build_dir = "default"
 #  ; toplevel_path =
-#      Some External "/Users/jessicawu/.opam/cs3110-2021fa/lib/toplevel"
-#  ; ocaml_bin = External "/Users/jessicawu/.opam/cs3110-2021fa/bin"
-#  ; ocaml = Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocaml"
-#  ; ocamlc = External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt"
-#  ; ocamlopt =
-#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt"
-#  ; ocamldep =
-#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamldep.opt"
+#      Some External "/Users/vian/.opam/cs3110-2021fa/lib/toplevel"
+#  ; ocaml_bin = External "/Users/vian/.opam/cs3110-2021fa/bin"
+#  ; ocaml = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocaml"
+#  ; ocamlc = External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamldep.opt"
 #  ; ocamlmklib =
-#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
+#      Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
 #  ; env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/Users/jessicawu/.opam/cs3110-2021fa/lib"
-#        ; "DUNE_OCAML_STDLIB" :
-#            "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/Users/jessicawu/monopoly_project"
-#        ; "INSIDE_DUNE" : "/Users/jessicawu/monopoly_project/_build/default"
+#        { "DUNE_OCAML_HARDCODED" : "/Users/vian/.opam/cs3110-2021fa/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/vian/cs3110/monopoly_project"
+#        ; "INSIDE_DUNE" : "/Users/vian/cs3110/monopoly_project/_build/default"
+#        ; "MANPATH" :
+#            "/Users/vian/cs3110/monopoly_project/_build/install/default/bin"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
+#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
+#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/jessicawu/monopoly_project/_build/install/default/lib/toplevel"
+#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_path = [ External "/Users/jessicawu/.opam/cs3110-2021fa/lib" ]
+#  ; findlib_path = [ External "/Users/vian/.opam/cs3110-2021fa/lib" ]
 #  ; arch_sixtyfour = true
 #  ; natdynlink_supported = true
 #  ; supports_shared_libraries = true
 #  ; ocaml_config =
 #      { version = "4.12.0"
-#      ; standard_library_default =
-#          "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
-#      ; standard_library = "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library_default = "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library = "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
 #      ; c_compiler = "cc"
@@ -75,12 +73,12 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #          ]
 #      ; native_c_libraries = [ "-lm" ]
 #      ; cc_profile = []
-#      ; architecture = "arm64"
+#      ; architecture = "amd64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
 #      ; system = "macosx"
-#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
 #      ; asm_cfi_supported = true
 #      ; with_frame_pointers = false
 #      ; ext_exe = ""
@@ -91,8 +89,8 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      ; os_type = "Unix"
 #      ; default_executable_name = "a.out"
 #      ; systhread_supported = true
-#      ; host = "aarch64-apple-darwin20.3.0"
-#      ; target = "aarch64-apple-darwin20.3.0"
+#      ; host = "x86_64-apple-darwin20.2.0"
+#      ; target = "x86_64-apple-darwin20.2.0"
 #      ; profiling = false
 #      ; flambda = false
 #      ; spacetime = false
@@ -112,4 +110,5 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      ; windows_unicode = false
 #      }
 #  }
-# Workspace root: /Users/jessicawu/monopoly_project
+$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I .utop/.utop.eobjs/byte -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/vian/.opam/cs3110-2021fa/lib/biniou -I /Users/vian/.opam/cs3110-2021fa/lib/bytes -I /Users/vian/.opam/cs3110-2021fa/lib/camomile -I /Users/vian/.opam/cs3110-2021fa/lib/camomile/default_config -I /Users/vian/.opam/cs3110-2021fa/lib/camomile/dyn -I /Users/vian/.opam/cs3110-2021fa/lib/camomile/lib_default -I /Users/vian/.opam/cs3110-2021fa/lib/camomile/library -I /Users/vian/.opam/cs3110-2021fa/lib/charInfo_width -I /Users/vian/.opam/cs3110-2021fa/lib/easy-format -I /Users/vian/.opam/cs3110-2021fa/lib/findlib -I /Users/vian/.opam/cs3110-2021fa/lib/lambda-term -I /Users/vian/.opam/cs3110-2021fa/lib/lwt -I /Users/vian/.opam/cs3110-2021fa/lib/lwt/unix -I /Users/vian/.opam/cs3110-2021fa/lib/lwt_log -I /Users/vian/.opam/cs3110-2021fa/lib/lwt_log/core -I /Users/vian/.opam/cs3110-2021fa/lib/lwt_react -I /Users/vian/.opam/cs3110-2021fa/lib/mew -I /Users/vian/.opam/cs3110-2021fa/lib/mew_vi -I /Users/vian/.opam/cs3110-2021fa/lib/mmap -I /Users/vian/.opam/cs3110-2021fa/lib/ocaml/compiler-libs -I /Users/vian/.opam/cs3110-2021fa/lib/ocaml/threads -I /Users/vian/.opam/cs3110-2021fa/lib/ocplib-endian -I /Users/vian/.opam/cs3110-2021fa/lib/ocplib-endian/bigstring -I /Users/vian/.opam/cs3110-2021fa/lib/react -I /Users/vian/.opam/cs3110-2021fa/lib/result -I /Users/vian/.opam/cs3110-2021fa/lib/seq -I /Users/vian/.opam/cs3110-2021fa/lib/trie -I /Users/vian/.opam/cs3110-2021fa/lib/utop -I /Users/vian/.opam/cs3110-2021fa/lib/yojson -I /Users/vian/.opam/cs3110-2021fa/lib/zed -I src/.monopoly.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.exe -output-complete-exe /Users/vian/.opam/cs3110-2021fa/lib/ocaml/compiler-libs/ocamlcommon.cma /Users/vian/.opam/cs3110-2021fa/lib/ocaml/compiler-libs/ocamlbytecomp.cma /Users/vian/.opam/cs3110-2021fa/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/vian/.opam/cs3110-2021fa/lib/findlib/findlib.cma /Users/vian/.opam/cs3110-2021fa/lib/findlib/findlib_top.cma /Users/vian/.opam/cs3110-2021fa/lib/result/result.cma /Users/vian/.opam/cs3110-2021fa/lib/lwt/lwt.cma /Users/vian/.opam/cs3110-2021fa/lib/ocaml/unix.cma -I /Users/vian/.opam/cs3110-2021fa/lib/ocaml /Users/vian/.opam/cs3110-2021fa/lib/ocaml/bigarray.cma -I /Users/vian/.opam/cs3110-2021fa/lib/ocaml /Users/vian/.opam/cs3110-2021fa/lib/mmap/mmap.cma /Users/vian/.opam/cs3110-2021fa/lib/ocplib-endian/ocplib_endian.cma /Users/vian/.opam/cs3110-2021fa/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /Users/vian/.opam/cs3110-2021fa/lib/ocaml/threads/threads.cma -I /Users/vian/.opam/cs3110-2021fa/lib/ocaml /Users/vian/.opam/cs3110-2021fa/lib/lwt/unix/lwt_unix.cma -I /Users/vian/.opam/cs3110-2021fa/lib/lwt/unix /Users/vian/.opam/cs3110-2021fa/lib/react/react.cma /Users/vian/.opam/cs3110-2021fa/lib/lwt_react/lwt_react.cma /Users/vian/.opam/cs3110-2021fa/lib/camomile/default_config/camomileDefaultConfig.cma /Users/vian/.opam/cs3110-2021fa/lib/camomile/library/camomileLibrary.cma /Users/vian/.opam/cs3110-2021fa/lib/camomile/lib_default/camomileLibraryDefault.cma /Users/vian/.opam/cs3110-2021fa/lib/camomile/dyn/camomileLibraryDyn.cma /Users/vian/.opam/cs3110-2021fa/lib/camomile/camomile_yuge.cma /Users/vian/.opam/cs3110-2021fa/lib/charInfo_width/charInfo_width.cma /Users/vian/.opam/cs3110-2021fa/lib/zed/zed.cma /Users/vian/.opam/cs3110-2021fa/lib/lwt_log/core/lwt_log_core.cma /Users/vian/.opam/cs3110-2021fa/lib/lwt_log/lwt_log.cma /Users/vian/.opam/cs3110-2021fa/lib/trie/trie.cma /Users/vian/.opam/cs3110-2021fa/lib/mew/mew.cma /Users/vian/.opam/cs3110-2021fa/lib/mew_vi/mew_vi.cma /Users/vian/.opam/cs3110-2021fa/lib/lambda-term/lambda_term.cma -I /Users/vian/.opam/cs3110-2021fa/lib/lambda-term /Users/vian/.opam/cs3110-2021fa/lib/utop/uTop.cma /Users/vian/.opam/cs3110-2021fa/lib/easy-format/easy_format.cma /Users/vian/.opam/cs3110-2021fa/lib/biniou/biniou.cma /Users/vian/.opam/cs3110-2021fa/lib/yojson/yojson.cma /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal/ANSITerminal.cma -I /Users/vian/.opam/cs3110-2021fa/lib/ANSITerminal src/monopoly.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)

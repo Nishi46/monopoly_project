@@ -28,5 +28,16 @@ val message : card -> string
 val action : card -> card_action
 (* [action c] is the action of the card. *)
 
-val next_card : deck -> card
-(* [next_card d] is the next card in the deck. *)
+val next_chance_card : deck -> card
+(* [next_chance_card d] is the next chance card in the deck. *)
+
+val next_cc_card : deck -> card
+(* [next_cc_card d] is the next cc card in the deck. *)
+
+val draw_chance : deck -> unit
+(* [draw_chance] pulls a chance card, prints out the name and message, and 
+   parses the action and does something depending on the card contents. *)
+
+val draw_cc : deck -> unit
+(* [draw_chance] pulls a chance card, prints out the name and message, and 
+    parses the action and does something depending on the card contents. *)

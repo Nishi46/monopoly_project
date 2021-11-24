@@ -2,10 +2,6 @@
 module Authors = Monopoly__Authors
 
 
-(** @canonical Monopoly.Boardspace *)
-module Boardspace = Monopoly__Boardspace
-
-
 (** @canonical Monopoly.Cards *)
 module Cards = Monopoly__Cards
 

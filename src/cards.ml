@@ -59,25 +59,25 @@ let next_cc_card d =
   let random_i = Stdlib.Random.int (Array.length d.cc_cards) in
   d.cc_cards.(random_i)
 
-let move_action slst = 
+let move_action slst state = 
   match slst with 
   | [] -> UnknownAction
   | [h] -> UnknownAction (* TODO: case where player moves to a specific space id *)
   | h :: t -> UnknownAction (* TODO: case where player moves a specific number of spaces *)
 
-let pay_action slst = 
+let pay_action slst state = 
   match slst with 
   | [] -> UnknownAction
   | [h] -> UnknownAction (* TODO: case where player pays bank brbs *)
   | h :: t -> UnknownAction (* TODO: case where player pays all players brbs *)
 
-let collect_action slst = 
+let collect_action slst state = 
   match slst with 
   | [] -> UnknownAction
   | [h] -> UnknownAction (* TODO: case where player collects brbs from the bank *)
   | h :: t -> UnknownAction (* TODO: case where player collects brbs from all players *)
 
-let parse_action c =
+let parse_action c state =
   let action_message = action c in
     let list =
       List.filter (fun x -> x <> "") (String.split_on_char ' ' action_message)
@@ -85,16 +85,16 @@ let parse_action c =
     match list with
     | [] -> raise UnknownAction
     | h :: t -> 
-      if h = "move" then move_action t 
-      else if h = "pay" then pay_action t 
-      else collect_action t
+      if h = "move" then move_action t state
+      else if h = "pay" then pay_action t state
+      else collect_action t state
 
-let draw_chance d = 
+let draw_chance d state = 
   let card = next_chance_card d in 
   let _ = print_endline ((name card) ^ " " ^ (message card)) in
-  parse_action card
+  parse_action card state
 
-let draw_cc d = 
+let draw_cc d state = 
   let card = next_cc_card d in 
   let _ = print_endline ((name card) ^ " " ^ (message card)) in
-  parse_action card
+  parse_action card state

@@ -10,10 +10,6 @@ module Cards = Monopoly__Cards
 module Chancecc = Monopoly__Chancecc
 
 
-(** @canonical Monopoly.Currency *)
-module Currency = Monopoly__Currency
-
-
 (** @canonical Monopoly.Jail *)
 module Jail = Monopoly__Jail
 

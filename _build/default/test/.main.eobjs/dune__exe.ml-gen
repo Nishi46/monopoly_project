@@ -10,6 +10,10 @@ module Luxury_income_go_tests = Dune__exe__Luxury_income_go_tests
 module Main = Dune__exe__Main
 
 
+(** @canonical Dune__exe.Nothing_tests *)
+module Nothing_tests = Dune__exe__Nothing_tests
+
+
 (** @canonical Dune__exe.Player_tests *)
 module Player_tests = Dune__exe__Player_tests
 

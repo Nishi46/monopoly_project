@@ -28,7 +28,6 @@
      (visibility public)
      (impl)
      (intf))
-    ((name Currency) (obj_name monopoly__Currency) (visibility public) (impl))
     ((name Jail) (obj_name monopoly__Jail) (visibility public) (impl) (intf))
     ((name Luxury_income_go)
      (obj_name monopoly__Luxury_income_go)

@@ -21,7 +21,7 @@ let nothing_of_json j =
     rent = j |> member "rent" |> to_int;
   }
 
-type p = {
+type n = {
     properties : nothing list
   }
   

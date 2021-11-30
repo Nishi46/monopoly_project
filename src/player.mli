@@ -31,3 +31,7 @@ val get_current_amt : player -> amount
 (* [get_current_amt player] returns the current amount that the player
  has in their game current account *)
 
+val move_player : player -> int -> unit 
+    
+ 
+

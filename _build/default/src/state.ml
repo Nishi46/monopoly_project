@@ -15,7 +15,7 @@ type t =
   status : string;
   players : player list;
   board_spaces : board_space list;
-  current_player_id : int; 
+  current_player_id : player_id; 
   jailed_player_ids : player_id list; 
 
 }
@@ -53,3 +53,15 @@ let init_state player_list = {
   current_player_id = 0;
   jailed_player_ids = []
 }
+
+let status s = s.status 
+let board_spaces s = s.board_spaces
+let player_list s = s.players 
+let jailed_player_ids s = s.jailed_player_ids
+let current_player_id s = s.current_player_id
+
+let set_status s status' = {s with status = status'}
+let set_board_spaces s board_spaces' = {s with board_spaces = board_spaces'}
+let set_player_list s player_list' = {s with players = player_list'}
+let set_jailed_player_ids s jailed_player_ids' = {s with jailed_player_ids = jailed_player_ids'}
+let set_current_player_id s current_player_id' = {s with current_player_id = current_player_id'}

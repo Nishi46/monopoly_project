@@ -97,23 +97,23 @@ let p_set_owner1 = Property.set_owner p 2 5
 let p_set_owner2 = Property.set_owner p 4 1
 let property_tests = [
 
-  property_id_test "test 1" p (p |> Property.properties |> List.hd) 2;
-  property_id_test "test 2" p (p |> Property.properties |> List.rev |> List.hd) 4;
-  property_type_test "test 1" p 2 "normal";
-  property_type_test "test 1" p 4 "normal";
-  property_color_test "test 1" p 2 "brown";
-  property_color_test "test 1" p 4 "brown";
-  property_name_test "test 1" p 2 "Flora Rose House";
-  property_name_test "test 2" p 4 "Alice Cook House";
-  property_price_test "test 1" p 2 60;
-  property_price_test "test 2" p 4 60;
-  property_rent_test "test 1" p 2 4;
-  property_rent_test "test 2" p 4 4;
-  property_owner_test "test 1" p 2 None;
-  property_owner_test "test 2" p 4 None;
+  property_id_test "test head of list" p (p |> Property.properties |> List.hd) 2;
+  property_id_test "test tail of list" p (p |> Property.properties |> List.rev |> List.hd) 4;
+  property_type_test "test property type" p 2 "normal";
+  property_type_test "test property type" p 4 "normal";
+  property_color_test "test color" p 2 "brown";
+  property_color_test "test color" p 4 "brown";
+  property_name_test "test name" p 2 "Flora Rose House";
+  property_name_test "test name" p 4 "Alice Cook House";
+  property_price_test "test price" p 2 60;
+  property_price_test "test price" p 4 60;
+  property_rent_test "test rent" p 2 4;
+  property_rent_test "test rent" p 4 4;
+  property_owner_test "test owner" p 2 None;
+  property_owner_test "test owner2" p 4 None;
 
-  property_owner_test "test 2" p_set_owner1 2 (Some 5);
-  property_owner_test "test 2" p_set_owner2 4 (Some 1);
+  property_owner_test "test set owner" p_set_owner1 2 (Some 5);
+  property_owner_test "test set owner" p_set_owner2 4 (Some 1);
 
   ]
 let suite =

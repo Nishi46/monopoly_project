@@ -16,6 +16,9 @@
     (** [from_json j] is the property list that [j] represents. Requires: [j] is
         a valid JSON property list representation. *)
     
+    val properties : p -> nothing list 
+    (** [properties p] is list of properties in p. *)
+
     val nothing_id : nothing -> property_id 
     (** [p_id property] is the id of property [property]. *)
     

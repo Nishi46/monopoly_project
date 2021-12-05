@@ -32,6 +32,8 @@ let nothing_list_of_json j =
 
 let from_json json = nothing_list_of_json json 
 
+let properties p = p.properties
+
 let rec get_prop_by_id p_id = function
   | [] -> raise (UnknownProperty p_id)
   | h :: t -> if h.id = p_id then h else get_prop_by_id p_id t

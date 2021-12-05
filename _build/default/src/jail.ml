@@ -34,6 +34,7 @@ let jail_list_of_json j =
 
 let from_json json = jail_list_of_json json 
 
+let properties p = p.properties
 
 let rec get_prop_by_id p_id = function
   | [] -> raise (UnknownProperty p_id)

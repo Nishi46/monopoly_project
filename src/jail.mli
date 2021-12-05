@@ -15,6 +15,10 @@
     val from_json : Yojson.Basic.t -> p
     (** [from_json j] is the property list that [j] represents. Requires: [j] is
         a valid JSON property list representation. *)
+
+    val properties : p -> jail list  
+    (** [p_id property] is the id of property [property]. *)
+        
     
     val jail_id : jail -> property_id 
     (** [p_id property] is the id of property [property]. *)

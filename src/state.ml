@@ -9,6 +9,8 @@ type board_space =
 | P of property 
 | LIG of special_space
 | CC of chance_cc_space
+| N of nothing
+| J of jail 
 
 type t = 
 {
@@ -23,7 +25,9 @@ type t =
 let get_id = function 
 | P b -> Property.p_id b 
 | LIG b -> Luxury_income_go.id b 
-| CC b -> Chancecc.id b 
+| CC b -> Chancecc.id b
+| N b -> Nothing.nothing_id b 
+| J b -> Jail.jail_id b 
 
 let compare_board_spaces b1 b2 = 
   get_id b1 - get_id b2
@@ -40,14 +44,26 @@ let rec cc_to_board = function
 | [] -> []
 | h :: t -> (CC h) :: cc_to_board t
 
+let rec nothing_to_board = function 
+| [] -> []
+| h :: t -> (N h) :: nothing_to_board t
+
+let rec jail_to_board = function 
+| [] -> []
+| h :: t -> (J h) :: jail_to_board t
+
 let get_board_spaces = 
   let p_lst = Property.from_json (Yojson.Basic.from_file "data/property_test.json") 
   |> Property.properties |> property_to_board in 
   let lig_lst = Luxury_income_go.from_json (Yojson.Basic.from_file "data/luxury_income_go.json") 
   |> Luxury_income_go.properties |> lig_to_board in 
   let cc_lst = Chancecc.from_json (Yojson.Basic.from_file "data/chance_community_chest.json") 
-  |> Chancecc.properties |> cc_to_board
-in p_lst @ lig_lst @ cc_lst |> List.sort compare_board_spaces
+  |> Chancecc.properties |> cc_to_board in
+  let n_lst = Nothing.from_json (Yojson.Basic.from_file "data/nothing.json") 
+  |> Nothing.properties |> nothing_to_board in
+  let j_lst = Jail.from_json (Yojson.Basic.from_file "data/jail.json") 
+  |> Jail.properties |> jail_to_board in
+p_lst @ lig_lst @ cc_lst @ n_lst @ j_lst |> List.sort compare_board_spaces
 
 let init_state player_list = { 
   status = "start";
@@ -88,7 +104,6 @@ let check_bankruptcy s =
   let new_players = 
   let f p = not (Player.check_bankcrupty p) in 
   List.filter f s.players in {s with players = new_players}
-
 let pass_go s = 
   let new_players = 
   let rec helper acc = function 

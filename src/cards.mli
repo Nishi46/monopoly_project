@@ -34,10 +34,10 @@ val next_chance_card : deck -> card
 val next_cc_card : deck -> card
 (* [next_cc_card d] is the next cc card in the deck. *)
 
-val draw_chance : deck -> State.t -> exn
+val draw_chance : deck -> State.t -> State.t
 (* [draw_chance] pulls a chance card, prints out the name and message, and 
    parses the action and does something depending on the card contents. *)
 
-val draw_cc : deck -> State.t -> exn
+val draw_cc : deck -> State.t -> State.t
 (* [draw_chance] pulls a chance card, prints out the name and message, and 
     parses the action and does something depending on the card contents. *)

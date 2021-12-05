@@ -1,5 +1,6 @@
 open Yojson.Basic.Util
 open State
+open Player
 
 type card_id = int
 
@@ -60,24 +61,46 @@ let next_cc_card d =
   d.cc_cards.(random_i)
 
 let move_action slst state = 
+  let current_id = current_player_id state in
+  let plist = player_list state in
+  let current_player = get_player_by_id current_id plist in
+  let others = get_others_by_id current_id plist in
   match slst with 
-  | [] -> UnknownAction
-  | [h] -> UnknownAction (* TODO: case where player moves to a specific space id *)
-  | h :: t -> UnknownAction (* TODO: case where player moves a specific number of spaces *)
+  | [] -> raise UnknownAction
+  | [h] -> change_location current_player (int_of_string h) :: others
+  (* case where player moves a to a specific property_id. *)
+  | h :: amt :: t -> move_player current_player (int_of_string amt) :: others
+  (* case where player moves a specific number of spaces. *)
 
 let pay_action slst state = 
+  let current_id = current_player_id state in
+  let plist = player_list state in
+  let current_player = get_player_by_id current_id plist in
+  let others = get_others_by_id current_id plist in
   match slst with 
-  | [] -> UnknownAction
-  | [h] -> UnknownAction (* TODO: case where player pays bank brbs *)
-  | h :: t -> UnknownAction (* TODO: case where player pays all players brbs *)
+  | [] -> raise UnknownAction
+  | [h] -> deduct_amt current_player (int_of_string h) :: others
+  (* case where player pays bank brbs *)
+  | h :: amt :: t -> 
+    pay_all current_player others (int_of_string amt)
+  (* case where player pays all players brbs *)
 
 let collect_action slst state = 
+  let current_id = current_player_id state in
+  let plist = player_list state in
+  let current_player = get_player_by_id current_id plist in
+  let others = get_others_by_id current_id plist in
   match slst with 
-  | [] -> UnknownAction
-  | [h] -> UnknownAction (* TODO: case where player collects brbs from the bank *)
-  | h :: t -> UnknownAction (* TODO: case where player collects brbs from all players *)
+  | [] -> raise UnknownAction
+  | [h] -> increment_amt current_player (int_of_string h) :: others
+  (* case where player collects brbs from the bank *)
+  | h :: amt :: t -> 
+    collect_all current_player others (int_of_string amt)
+  (* case where player collects brbs from all players *)
 
-let parse_action c state =
+(* [parse_action_helper c state] is the helper function for [parse_action]. Will
+  return a player list with updated attributes. *)
+let parse_action_helper c state =
   let action_message = action c in
     let list =
       List.filter (fun x -> x <> "") (String.split_on_char ' ' action_message)
@@ -88,6 +111,10 @@ let parse_action c state =
       if h = "move" then move_action t state
       else if h = "pay" then pay_action t state
       else collect_action t state
+
+let parse_action c state = 
+  let players = parse_action_helper c state in
+  set_player_list state players
 
 let draw_chance d state = 
   let card = next_chance_card d in 

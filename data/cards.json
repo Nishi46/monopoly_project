@@ -16,7 +16,7 @@
       "card_id": 3,
       "card_name": "You lost a bet with your frat bros.",
       "card_message": "Pay each player 50 BRBs.",
-      "card_action": "pay all 50"
+      "card_action": "pay 50 all"
     },
     {
       "card_id": 4,
@@ -150,7 +150,7 @@
       "card_id": 10,
       "card_name": "You were caught for AI violation!",
       "card_message": "Go to jail. Do not collect money if you pass GO.",
-      "card_action": "move 11"
+      "card_action": "move 41"
     },
     {
       "card_id": 11,

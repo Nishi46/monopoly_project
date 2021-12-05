@@ -1,1 +1,1 @@
-src/cards.ml: Array List State Stdlib String Yojson
+src/cards.ml: Array List Player State Stdlib String Yojson

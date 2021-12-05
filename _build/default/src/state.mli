@@ -16,6 +16,9 @@ type t
 val init_state: player list -> t
 (** [init_state p] returns the initial state of the game with players p *)
 
+val init_state': int -> t
+(** [init_state' p] returns the initial state of the game with number of players p *)
+
 val status: t -> string 
 (** [status t] returns the status of the state t *)
 
@@ -45,3 +48,9 @@ val set_jailed_player_ids: t -> player_id list -> t
 
 val set_current_player_id: t -> player_id -> t
 (** [set_current_player_id t s] returns state t with current_player_id s *)
+
+val check_bankruptcy: t -> t
+(** [check_bankruptcy t] returns new state t' with bankrupt players removed *)
+
+val pass_go: t -> t 
+(** [pass_go t] returns new state t' with players who pass go gaining income *)

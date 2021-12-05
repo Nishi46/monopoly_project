@@ -1,1 +1,1 @@
-src/jail.mli:
+src/jail.mli: Yojson

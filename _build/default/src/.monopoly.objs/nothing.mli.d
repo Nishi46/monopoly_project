@@ -1,1 +1,1 @@
-src/nothing.mli:
+src/nothing.mli: Yojson

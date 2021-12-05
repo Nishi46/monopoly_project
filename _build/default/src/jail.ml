@@ -1,6 +1,9 @@
 (** Jail module *)
 open Property
 open Yojson.Basic.Util
+type property_id = int
+
+type property_type = string
 
 type jail = {
   id : property_id;
@@ -36,7 +39,7 @@ let rec get_prop_by_id p_id = function
   | [] -> raise (UnknownProperty p_id)
   | h :: t -> if h.id = p_id then h else get_prop_by_id p_id t
 
-let nothing_id prop = prop.id
+let jail_id prop = prop.id
 
 let jail_type p p_id =
   let prop = get_prop_by_id p_id p.properties in

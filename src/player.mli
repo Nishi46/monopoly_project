@@ -1,33 +1,63 @@
 (* Representation of player data.
     This module represents the player data. *)
-type player
-(* The abstract type that represents a player. *)
+    type player
+    (* The abstract type that represents a player. *)
+    
+    type player_id = int
+    (* The type of player's id. *)
+    
+    exception InvalidPlayerNumber
+    (* exception that is thrown when an invalid player number is provided. *)
+    
+    type amount = int
+    (* The type of the amount that each player has. *)
+    
+    val player_records_list : string -> player list
+    (* [player_records_list number] is list of [no_of_players] player types, each 
+       player with a distinct id between 1-4. *)
+    
+    val get_current_location : player -> int
+    (** [get_current_location player] returns the current location
+     of the player on the board. *)
+    
+    val get_player_id : player -> player_id
+    (* [get_player_id player] returns the player id
+     of the selected player. *)
+    
+    val get_all_properties : player -> string list
+    (* [get_all_properties player] returns all the properties that the player 
+    owns*)
+    
+    val get_current_amt : player -> amount
+    (* [get_current_amt] returns the current amount that the player
+     has in their game current account *)
 
-type player_id = int
-(* The type of player's id. *)
+    val deduct_amt : player -> amount -> unit
+      (* [deduct_amt] performs deductions of the input amount on the 
+      current amount of the player input *)
 
-exception InvalidPlayerNumber
-(* exception that is thrown when an invalid player number is provided. *)
+    val increment_amt : player -> amount -> unit
+      (* [increment_amt] performs incrementations of the input amount on the 
+      current amount of the player input *)
+    
+    val pay_rent_helper : player -> player -> amount -> unit
+   (* [pay_rent_helper] increments current account balance of the rent taker (player) and 
+   decrements current account balance of the rent payer (player)
+ with the given input amount *)
+    
+    val collect_money_from_bank : player -> amount -> unit
+   (* [collect_money_from_bank] increments the player's current account balance 
+   by input amount *)
+    
+    val check_bankcrupty : player -> bool
+   (* [check_bankcrupty] returns whether the player is bankcrupt or not (player's 
+   current account is less than 0 or not) *)
+    
+    val change_location : player -> int -> unit
+   (* [change_location] changes the player's current_location field to the
+   property_id innputted *)
 
-type amount = int
-(* The type of the amount that each player has. *)
-
-val player_records_list : string -> player list
-(* [player_records_list number] is list of [no_of_players] player types, each 
-   player with a distinct id between 1-4. *)
-
-val get_current_location : player -> int
-(** [get_current_location player] returns the current location
- of the player on the board. *)
-
-val get_player_id : player -> player_id
-(* [get_player_id player] returns the player id
- of the selected player. *)
-
-val get_all_properties : player -> string list
-(* [get_all_properties player] returns all the properties that the player owns*)
-
-val get_current_amt : player -> amount
-(* [get_current_amt player] returns the current amount that the player
- has in their game current account *)
-
+   val move_player : player -> int -> unit 
+   (* [move_player] changes the player's current_location based on the number of moves
+   and 40 boardspaces *)
+   

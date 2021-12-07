@@ -18,14 +18,14 @@ let player_suite = Player_tests.suite
 let lux_inc_go_suite = Luxury_income_go_tests.suite
 let nothing_suite = Nothing_tests.suite
 
-(*let cards_suite = Cards_tests.suite*)
+let cards_suite = Cards_tests.suite
 
 let _ = run_test_tt_main property_suite
 let _ = run_test_tt_main chance_cc_suite
 let _ = run_test_tt_main player_suite
 let _ = run_test_tt_main lux_inc_go_suite
 let _ = run_test_tt_main nothing_suite
-(*let _ = run_test_tt_main cards_suite*)
+let _ = run_test_tt_main cards_suite
 
 
 

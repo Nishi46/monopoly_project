@@ -1,28 +1,24 @@
 open Yojson.Basic.Util
-open Property
-type property_id = int
-type property_type = string
-type nothing = {
-  id : property_id;
-  p_type : property_type; 
-  color : string;
-  name: string;
-  price: int;
-  rent: int;
-}
 
-let nothing_of_json j =
-  {
-    id = j |> member "property id" |> to_int;
-    p_type = j |> member "property_type" |> to_string;
-    color = j |> member "color" |> to_string;
-    name= j |> member "name" |> to_string;
-    price = j |> member "price" |> to_int;
-    rent = j |> member "rent" |> to_int;
-  }
+type property_id = int
+type property_name = string
+
+exception UnknownProperty of property_id
+
+type nothing = {
+  property_id : property_id;
+  property_name : property_name
+}
 
 type p = {
     properties : nothing list
+  }
+
+(* helper functions *)
+let nothing_of_json j =
+  {
+    property_id = j |> member "property_id" |> to_int;
+    property_name = j |> member "property_name" |> to_string
   }
   
 let nothing_list_of_json j =
@@ -36,22 +32,16 @@ let properties p = p.properties
 
 let rec get_prop_by_id p_id = function
   | [] -> raise (UnknownProperty p_id)
-  | h :: t -> if h.id = p_id then h else get_prop_by_id p_id t
+  | h :: t -> if h.property_id = p_id then h else get_prop_by_id p_id t
 
-let nothing_id prop = prop.id
+let properties s = s.properties
 
-let nothing_type p p_id =
-  let prop = get_prop_by_id p_id p.properties in
-  prop.p_type
-let nothing_color p p_id =
-  let prop = get_prop_by_id p_id p.properties in
-  prop.color
+(* end of helper functions*)
+
+let from_json json = nothing_list_of_json json
+
+let nothing_id prop = prop.property_id
+
 let name p p_id =
   let prop = get_prop_by_id p_id p.properties in
-  prop.name
-let price p p_id =
-  let prop = get_prop_by_id p_id p.properties in
-  prop.price
-let rent p p_id =
-  let prop = get_prop_by_id p_id p.properties in
-  prop.rent
+  prop.property_name

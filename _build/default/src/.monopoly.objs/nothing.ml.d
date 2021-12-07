@@ -1,1 +1,1 @@
-src/nothing.ml: List Property Yojson
+src/nothing.ml: List Yojson

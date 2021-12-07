@@ -1,20 +1,12 @@
 {
   "property": [
     {
-      "property id": 21,
-      "property_type": "other",
-      "color": "",
-      "name": "Free Parking",
-      "price": "",
-      "rent": ""
+      "property_id": 21,
+      "property_name": "Free Parking"
     },
     {
-      "property id": 41,
-      "property_type": "other",
-      "color": "",
-      "name": "Just Visiting",
-      "price": "",
-      "rent": ""
+      "property_id": 11,
+      "property_name": "Just Visiting"
     }
   ]
 }

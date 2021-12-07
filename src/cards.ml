@@ -52,6 +52,10 @@ let message c = c.card_message
 
 let action c = c.card_action
 
+let chance_deck d = d.chance_cards
+
+let cc_deck d = d.cc_cards
+
 let next_chance_card d = 
   let random_i = Stdlib.Random.int (Array.length d.chance_cards) in
   d.chance_cards.(random_i)

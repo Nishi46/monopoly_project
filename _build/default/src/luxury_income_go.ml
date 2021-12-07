@@ -26,7 +26,7 @@ let prop_list_of_json j =
     special_spaces = j |> member "property" |> to_list |> List.map prop_of_json;
   }
 
-  let rec get_prop_by_id p_id = function
+let rec get_prop_by_id p_id = function
   | [] -> raise (UnknownProperty p_id)
   | h :: t -> if h.property_id = p_id then h else get_prop_by_id p_id t
 

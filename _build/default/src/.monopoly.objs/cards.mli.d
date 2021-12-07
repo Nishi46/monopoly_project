@@ -1,1 +1,1 @@
-src/cards.mli: State
+src/cards.mli: State Yojson

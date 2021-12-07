@@ -44,17 +44,18 @@ let rec get_prop_by_id p_id = function
 let rec set_owner_helper p_id player_id = function
   | [] -> []
   | h :: t -> if h.id = p_id then 
-    let new_prop = {h with owner = Some player_id} in 
+    let new_prop = {h with owner = player_id} in 
       new_prop :: set_owner_helper p_id player_id t 
     else h :: set_owner_helper p_id player_id t 
 
 (* end of helper functions *)
 let from_json json = prop_list_of_json json 
 
+let make_p prop = {properties = prop}
 let properties p = p.properties
-
 let p_id prop = prop.id
 
+let prop p p_id = get_prop_by_id p_id p.properties
 let p_type p p_id =
   let prop = get_prop_by_id p_id p.properties in
   prop.p_type
@@ -74,6 +75,9 @@ let owner p p_id =
   let prop = get_prop_by_id p_id p.properties in
   prop.owner
 
-let set_owner p p_id player_id =
+let set_owner p p_id player_id = 
+let prop = get_prop_by_id p_id p.properties in {prop with owner = player_id}
+
+let set_owner' p p_id player_id = 
   let new_properties = set_owner_helper p_id player_id p.properties 
   in {properties = new_properties}

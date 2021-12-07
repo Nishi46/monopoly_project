@@ -53,17 +53,55 @@ let rec jail_to_board = function
 | h :: t -> (J h) :: jail_to_board t
 
 let get_board_spaces = 
-  let p_lst = Property.from_json (Yojson.Basic.from_file "data/property_test.json") 
+  let p_lst = Property.from_json 
+  (Yojson.Basic.from_file "data/property_test.json") 
   |> Property.properties |> property_to_board in 
-  let lig_lst = Luxury_income_go.from_json (Yojson.Basic.from_file "data/luxury_income_go.json") 
+  let lig_lst = Luxury_income_go.from_json 
+  (Yojson.Basic.from_file "data/luxury_income_go.json") 
   |> Luxury_income_go.properties |> lig_to_board in 
-  let cc_lst = Chancecc.from_json (Yojson.Basic.from_file "data/chance_community_chest.json") 
+  let cc_lst = Chancecc.from_json 
+  (Yojson.Basic.from_file "data/chance_community_chest.json") 
   |> Chancecc.properties |> cc_to_board in
-  let n_lst = Nothing.from_json (Yojson.Basic.from_file "data/nothing.json") 
+  let n_lst = Nothing.from_json 
+  (Yojson.Basic.from_file "data/nothing.json") 
   |> Nothing.properties |> nothing_to_board in
-  let j_lst = Jail.from_json (Yojson.Basic.from_file "data/jail.json") 
+  let j_lst = Jail.from_json 
+  (Yojson.Basic.from_file "data/jail.json") 
   |> Jail.properties |> jail_to_board in
 p_lst @ lig_lst @ cc_lst @ n_lst @ j_lst |> List.sort compare_board_spaces
+
+let rec get_property_spaces acc = function 
+| [] -> acc
+| (P p) :: t -> get_property_spaces (p :: acc) t
+| _ :: t -> get_property_spaces acc t
+
+let update_property_space op np b = 
+let rec helper op np acc = function 
+| [] -> acc 
+| (P p) :: t -> 
+  if p = op then helper op np (P np :: acc) t 
+  else helper op np (P op :: acc) t 
+| x :: t -> helper op np (x :: acc) t in helper op np [] b 
+
+let rec get_lig_spaces acc = function 
+| [] -> acc
+| (LIG p) :: t -> get_lig_spaces (p :: acc) t
+| _ :: t -> get_lig_spaces acc t
+
+let rec get_cc_spaces acc = function 
+| [] -> acc
+| (CC p) :: t -> get_cc_spaces (p :: acc) t
+| _ :: t -> get_cc_spaces acc t
+
+let rec get_n_spaces acc = function 
+| [] -> acc
+| (N p) :: t -> get_n_spaces (p :: acc) t
+| _ :: t -> get_n_spaces acc t
+
+let rec get_j_spaces acc = function 
+| [] -> acc
+| (J p) :: t -> get_j_spaces (p :: acc) t
+| _ :: t -> get_j_spaces acc t
 
 let init_state player_list = { 
   status = "start";
@@ -114,3 +152,28 @@ let pass_go s =
     let acc' = p' :: acc in helper acc' t 
     in helper [] s.players in 
     {s with players = new_players}
+
+let update_player_list op np p = 
+let rec helper op np acc = function 
+| [] -> acc 
+| h :: t -> 
+  let acc' = if h = op then np :: acc else h :: acc in 
+  helper op np acc' t in helper op np [] p 
+
+let sell_property s o b p_id =
+let p =  get_property_spaces [] s.board_spaces |> Property.make_p in 
+let prop = Property.prop p p_id in 
+let amt = Property.price p p_id in 
+let new_player = Player.deduct_amt o amt in 
+let new_players = update_player_list o new_player s.players in 
+match b with 
+| None -> 
+  let new_prop = Property.set_owner p p_id None in     
+  let new_board_spaces = update_property_space prop new_prop s.board_spaces in
+{s with players = new_players; board_spaces = new_board_spaces}
+| Some buyer -> 
+  let new_buyer = Player.increment_amt buyer amt in 
+  let new_players = update_player_list buyer new_buyer new_players in 
+  let new_prop = Property.set_owner p p_id (Some p_id) in 
+  let new_board_spaces = update_property_space prop new_prop s.board_spaces in
+  {s with players = new_players; board_spaces = new_board_spaces}

@@ -1,10 +1,10 @@
-# dune exec bin/main.exe
+# dune build
 # OCAMLPARAM: unset
-# Workspace root: /Users/vian/cs3110/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dune19e358.output 2> /dev/null
+# Workspace root: /Users/jessicawu/monopoly_project
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune4838ef.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunec2813d.output
+$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dunec08002.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -14,39 +14,41 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #  ; fdo_target_exe = None
 #  ; build_dir = "default"
 #  ; toplevel_path =
-#      Some External "/Users/vian/.opam/cs3110-2021fa/lib/toplevel"
-#  ; ocaml_bin = External "/Users/vian/.opam/cs3110-2021fa/bin"
-#  ; ocaml = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocaml"
-#  ; ocamlc = External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt"
-#  ; ocamlopt = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlopt.opt"
-#  ; ocamldep = Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamldep.opt"
+#      Some External "/Users/jessicawu/.opam/cs3110-2021fa/lib/toplevel"
+#  ; ocaml_bin = External "/Users/jessicawu/.opam/cs3110-2021fa/bin"
+#  ; ocaml = Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocaml"
+#  ; ocamlc = External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamldep.opt"
 #  ; ocamlmklib =
-#      Ok External "/Users/vian/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
+#      Ok External "/Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlmklib.opt"
 #  ; env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/Users/vian/.opam/cs3110-2021fa/lib"
-#        ; "DUNE_OCAML_STDLIB" : "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/Users/vian/cs3110/monopoly_project"
-#        ; "INSIDE_DUNE" : "/Users/vian/cs3110/monopoly_project/_build/default"
-#        ; "MANPATH" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/bin"
+#        { "DUNE_OCAML_HARDCODED" : "/Users/jessicawu/.opam/cs3110-2021fa/lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/jessicawu/monopoly_project"
+#        ; "INSIDE_DUNE" : "/Users/jessicawu/monopoly_project/_build/default"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib"
+#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib"
+#            "/Users/jessicawu/monopoly_project/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/vian/cs3110/monopoly_project/_build/install/default/lib/toplevel"
+#            "/Users/jessicawu/monopoly_project/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_path = [ External "/Users/vian/.opam/cs3110-2021fa/lib" ]
+#  ; findlib_path = [ External "/Users/jessicawu/.opam/cs3110-2021fa/lib" ]
 #  ; arch_sixtyfour = true
 #  ; natdynlink_supported = true
 #  ; supports_shared_libraries = true
 #  ; ocaml_config =
 #      { version = "4.12.0"
-#      ; standard_library_default = "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
-#      ; standard_library = "/Users/vian/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library_default =
+#          "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
+#      ; standard_library = "/Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
 #      ; c_compiler = "cc"
@@ -73,12 +75,12 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #          ]
 #      ; native_c_libraries = [ "-lm" ]
 #      ; cc_profile = []
-#      ; architecture = "amd64"
+#      ; architecture = "arm64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
 #      ; system = "macosx"
-#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
 #      ; asm_cfi_supported = true
 #      ; with_frame_pointers = false
 #      ; ext_exe = ""
@@ -89,8 +91,8 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #      ; os_type = "Unix"
 #      ; default_executable_name = "a.out"
 #      ; systhread_supported = true
-#      ; host = "x86_64-apple-darwin20.2.0"
-#      ; target = "x86_64-apple-darwin20.2.0"
+#      ; host = "aarch64-apple-darwin20.3.0"
+#      ; target = "aarch64-apple-darwin20.3.0"
 #      ; profiling = false
 #      ; flambda = false
 #      ; spacetime = false
@@ -110,4 +112,11 @@ $ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7
 #      ; windows_unicode = false
 #      }
 #  }
-# Workspace root: /Users/vian/cs3110/monopoly_project
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamldep.opt -modules -impl bin/prompts.ml) > _build/default/bin/.main.eobjs/prompts.ml.d
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I bin/.main.eobjs/byte -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2 -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Prompts.cmo -c -impl bin/prompts.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I bin/.main.eobjs/byte -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2 -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Functions.cmo -c -impl bin/functions.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -bin-annot -I bin/.main.eobjs/byte -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2 -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Main.cmo -c -impl bin/main.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2 -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Functions.cmx -c -impl bin/functions.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2 -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Prompts.cmx -c -impl bin/prompts.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal -I /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou -I /Users/jessicawu/.opam/cs3110-2021fa/lib/bytes -I /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2 -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced -I /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims -I /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson -I src/.monopoly.objs/byte -I src/.monopoly.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66-67 -warn-error -a+31 -g -o bin/main.exe /Users/jessicawu/.opam/cs3110-2021fa/lib/easy-format/easy_format.cmxa /Users/jessicawu/.opam/cs3110-2021fa/lib/biniou/biniou.cmxa /Users/jessicawu/.opam/cs3110-2021fa/lib/yojson/yojson.cmxa /Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml/unix.cmxa -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ocaml /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal/ANSITerminal.cmxa -I /Users/jessicawu/.opam/cs3110-2021fa/lib/ANSITerminal src/monopoly.cmxa /Users/jessicawu/.opam/cs3110-2021fa/lib/stdlib-shims/stdlib_shims.cmxa /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/advanced/oUnitAdvanced.cmxa /Users/jessicawu/.opam/cs3110-2021fa/lib/ounit2/oUnit.cmxa bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Board_print.cmx bin/.main.eobjs/native/dune__exe__Prompts.cmx bin/.main.eobjs/native/dune__exe__Functions.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)

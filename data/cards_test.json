@@ -1,0 +1,18 @@
+{
+  "chance": [
+    {
+      "card_id": 7,
+      "card_name": "You want to go shopping!",
+      "card_message": "Advance to Cornell Store.",
+      "card_action": "move 16"
+    }
+  ],
+  "community chest": [
+    {
+      "card_id": 1,
+      "card_name": "Cornell increased tuition.",
+      "card_message": "Pay Cornell 50 BRBs",
+      "card_action": "pay 50"
+    }
+  ]
+}

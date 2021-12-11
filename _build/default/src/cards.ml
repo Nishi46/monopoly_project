@@ -73,7 +73,7 @@ let move_action slst state =
   | [] -> raise UnknownAction
   | [h] -> change_location current_player (int_of_string h) :: others
   (* case where player moves a to a specific property_id. *)
-  | h :: amt :: t -> move_player current_player (int_of_string amt) :: others
+  | h :: num :: t -> move_player current_player (int_of_string num) :: others
   (* case where player moves a specific number of spaces. *)
 
 let pay_action slst state = 

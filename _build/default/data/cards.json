@@ -3,7 +3,7 @@
     {
       "card_id": 0,
       "card_name": "Get out of Jail Free!",
-      "card_message": "You get out of Jail free! If you are not in jail, collect 200 BRBs.",
+      "card_message": "You get out of Jail free! You may keep this card for later use if desired.",
       "card_action": "move 41"
     },
     {
@@ -32,9 +32,9 @@
     },
     {
       "card_id": 5,
-      "card_name": "You forgot your laptop in your dorm.",
-      "card_message": "Go back three spaces.",
-      "card_action": "move -3 spaces"
+      "card_name": "You see your friend waving at you at the clock tower. You run to greet them.",
+      "card_message": "Go to McGraw Tower.",
+      "card_action": "move 6"
     },
     {
       "card_id": 6,

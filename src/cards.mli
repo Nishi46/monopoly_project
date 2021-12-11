@@ -51,3 +51,7 @@ val draw_chance : deck -> State.t -> State.t
 val draw_cc : deck -> State.t -> State.t
 (* [draw_chance] pulls a chance card, prints out the name and message, and 
     parses the action and does something depending on the card contents. *)
+
+val parse_action: card -> State.t -> State.t
+(* [parse_action] manipulates the player list in state depending on the 
+    contents of the [card]. *)

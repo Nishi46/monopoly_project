@@ -85,6 +85,48 @@ name >:: fun _ ->
 assert_equal ~printer: (string_of_int)
 expected_output loc
 
+let player_pay_card_test
+(name : string)
+(c : Cards.card)
+(s : State.t)
+(expected_output : int) : test =
+let state' = Cards.parse_action c s in
+let player_list = State.player_list state' in
+let current_p_id = State.current_player_id state' in
+let current_p = Player.get_player_by_id current_p_id player_list in
+let balance = Player.get_current_amt current_p in
+name >:: fun _ -> 
+assert_equal ~printer: (string_of_int)
+expected_output balance
+
+let pay_all_player_test
+(name : string)
+(c : Cards.card)
+(s : State.t)
+(expected_output : int) : test =
+let state' = Cards.parse_action c s in
+let player_list = State.player_list state' in
+let current_p_id = State.current_player_id state' in
+let current_p = Player.get_player_by_id current_p_id player_list in
+let balance = Player.get_current_amt current_p in
+name >:: fun _ -> 
+assert_equal ~printer: (string_of_int)
+expected_output balance
+
+let player_collect_card_test
+(name : string)
+(c : Cards.card)
+(s : State.t)
+(expected_output : int) : test =
+let state' = Cards.parse_action c s in
+let player_list = State.player_list state' in
+let current_p_id = State.current_player_id state' in
+let current_p = Player.get_player_by_id current_p_id player_list in
+let balance = Player.get_current_amt current_p in
+name >:: fun _ -> 
+assert_equal ~printer: (string_of_int)
+expected_output balance
+
 (*****************************************************************************)
 (* Testing Basic Cards + Decks *)
 let deck = 
@@ -122,11 +164,17 @@ let cc_one = cc_deck deck
 
 (*****************************************************************************)
 (* Testing Action Parsing *)
-let test_state = State.init_state' 2 
+let test_state = State.init_state' 4 
 let p1_turn = State.set_current_player_id test_state 1
+let p2_turn = State.set_current_player_id p1_turn 2
+let p3_turn = State.set_current_player_id p2_turn 3
+let p4_turn = State.set_current_player_id p3_turn 4
 let move_loc_card1 = chance.(10)
 let move_loc_card2 = cc.(9)
 let move_space_card = chance.(5)
+let pay_card1 = cc.(8)
+let pay_card2 = chance.(11)
+let collect_card1 = chance.(3)
 
 (*****************************************************************************)
 
@@ -155,6 +203,10 @@ let action_parse_tests = [
   move_loc_card_test "player 1 move to loc 41" move_loc_card2 p1_turn 41;
   move_loc_card_test "player 1 move to loc 12" move_loc_card1 p1_turn 12;
   move_space_card_test "player 1 move to 6" move_space_card p1_turn 6;
+  player_pay_card_test "player 1: 1500 -> 1400?" pay_card1 p1_turn 1400;
+  player_pay_card_test "player 2: 1500 -> 1470?" pay_card2 p2_turn 1470;
+  (*pay_all_player_test "player 3: 1500 -> 1200" pay_card1 p3_turn 1200;*)
+  player_collect_card_test "player 4: 1500 -> 1650?" collect_card1 p4_turn 1650;
 ]
 
 let suite =

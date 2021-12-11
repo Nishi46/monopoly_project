@@ -1,6 +1,6 @@
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Start test test suite for players:0:test1 for player id.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Test test suite for players:0:test1 for player id is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: End test test suite for players:0:test1 for player id.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Start test test suite for players:2:test1 for current_location.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Test test suite for players:2:test1 for current_location is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: End test test suite for players:2:test1 for current_location.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Start test test suite for players:0:test1 for player id.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Test test suite for players:0:test1 for player id is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: End test test suite for players:0:test1 for player id.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Start test test suite for players:2:test1 for current_location.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: Test test suite for players:2:test1 for current_location is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#01 I: End test test suite for players:2:test1 for current_location.

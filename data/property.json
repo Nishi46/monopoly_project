@@ -62,7 +62,7 @@
       "color": "",
       "name": "Ithaca Falls",
       "price": 150,
-      "rent": "If you own one nature property, the rent is the number of the dies times 4. If you own both nature properties, the rent is the number of the dies times 10. "
+      "rent": 10
     },
     {
       "property id": 14,
@@ -166,7 +166,7 @@
       "color": "",
       "name": "Cayuga Lake",
       "price": 150,
-      "rent": "If you own one nature property, the rent is the number of the dies times 4. If you own both nature properties, the rent is the number of the dies times 10. "
+      "rent": 10
     },
     {
       "property id": 30,

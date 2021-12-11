@@ -1,10 +1,10 @@
-# dune exec bin/main.exe
+# dune exec test/main.exe
 # OCAMLPARAM: unset
 # Workspace root: /Users/vian/cs3110/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dune19e358.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dune06e6af.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dunec2813d.output
+$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dune817e0d.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"

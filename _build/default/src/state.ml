@@ -54,7 +54,7 @@ let rec jail_to_board = function
 
 let get_board_spaces = 
   let p_lst = Property.from_json 
-  (Yojson.Basic.from_file "data/property_test.json") 
+  (Yojson.Basic.from_file "data/property.json") 
   |> Property.properties |> property_to_board in 
   let lig_lst = Luxury_income_go.from_json 
   (Yojson.Basic.from_file "data/luxury_income_go.json") 
@@ -161,19 +161,40 @@ let rec helper op np acc = function
   helper op np acc' t in helper op np [] p 
 
 let sell_property s o b p_id =
-let p =  get_property_spaces [] s.board_spaces |> Property.make_p in 
-let prop = Property.prop p p_id in 
-let amt = Property.price p p_id in 
-let new_player = Player.deduct_amt o amt in 
-let new_players = update_player_list o new_player s.players in 
-match b with 
-| None -> 
-  let new_prop = Property.set_owner p p_id None in     
-  let new_board_spaces = update_property_space prop new_prop s.board_spaces in
-{s with players = new_players; board_spaces = new_board_spaces}
-| Some buyer -> 
-  let new_buyer = Player.increment_amt buyer amt in 
-  let new_players = update_player_list buyer new_buyer new_players in 
-  let new_prop = Property.set_owner p p_id (Some p_id) in 
-  let new_board_spaces = update_property_space prop new_prop s.board_spaces in
+  let p =  get_property_spaces [] s.board_spaces |> Property.make_p in 
+  let prop = Property.prop p p_id in 
+  let amt = Property.price p p_id in 
+  let new_player = Player.increment_amt o amt in 
+  let new_player = Player.remove_property new_player p_id in 
+  let new_players = update_player_list o new_player s.players in 
+  match b with 
+  | None -> 
+    let new_prop = Property.set_owner p p_id None in     
+    let new_board_spaces = update_property_space prop new_prop s.board_spaces in
   {s with players = new_players; board_spaces = new_board_spaces}
+  | Some buyer -> 
+    let new_buyer = Player.deduct_amt buyer amt in
+    let new_buyer = Player.add_property new_buyer p_id in 
+    let new_buyer_id = Player.get_player_id new_buyer in  
+    let new_players = update_player_list buyer new_buyer new_players in 
+    let new_prop = Property.set_owner p p_id (Some new_buyer_id) in 
+    let new_board_spaces = update_property_space prop new_prop s.board_spaces in
+    {s with players = new_players; board_spaces = new_board_spaces}
+
+  let buy_property s o b p_id =
+    let p =  get_property_spaces [] s.board_spaces |> Property.make_p in 
+    let prop = Property.prop p p_id in 
+    let amt = Property.price p p_id in 
+    let new_player = Player.deduct_amt b amt in 
+    let new_player = Player.add_property new_player p_id in 
+    let new_player_id = Player.get_player_id new_player in 
+    let new_players = update_player_list b new_player s.players in 
+    let new_prop = Property.set_owner p p_id (Some new_player_id) in     
+    let new_board_spaces = update_property_space prop new_prop s.board_spaces in
+    match o with 
+    | None -> {s with players = new_players; board_spaces = new_board_spaces}
+    | Some seller -> 
+      let new_seller = Player.increment_amt seller amt in
+      let new_seller = Player.remove_property new_seller p_id in 
+      let new_players = update_player_list seller new_seller new_players in 
+      {s with players = new_players; board_spaces = new_board_spaces}

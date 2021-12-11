@@ -54,3 +54,13 @@ val check_bankruptcy: t -> t
 
 val pass_go: t -> t 
 (** [pass_go t] returns new state t' with players who pass go gaining income *)
+
+val sell_property: t -> player -> player option -> int -> t 
+(** [sell_property t o b p_id] returns new state t' with a selling transaction 
+between o and b for property with id p_id. If b is None, o sells to the bank, 
+if b is Some b', b' is updated *)
+
+val buy_property: t -> player option -> player  -> int -> t 
+(** [buy_property t b o p_id] returns new state t' with a purchase  
+between o and b for property with id p_id. If o is None, b buys from the bank, 
+if o is Some b', b buys from o' *)

@@ -7,7 +7,7 @@ exception InvalidPlayerNumber
 type player = {
   id : player_id;
   mutable current_amount : amount;
-  mutable properties : string list;
+  mutable properties : int list;
   mutable current_location : int;
 }
 
@@ -98,3 +98,12 @@ let rec pay_all player plist amt =
     | [] -> player :: plist
     | h :: t -> 
       (pay_rent_helper h player amt) @ (collect_all player t amt)
+
+let properties p = p.properties
+let remove_property p p_id = 
+  let new_plist = List.filter (fun x -> x <> p_id) p.properties in 
+  {p with properties = new_plist}
+
+let add_property p p_id = 
+  let new_plist = p_id :: p.properties in 
+  {p with properties = new_plist}

@@ -24,7 +24,7 @@
     (* [get_player_id player] returns the player id
      of the selected player. *)
     
-    val get_all_properties : player -> string list
+    val get_all_properties : player -> int list
     (* [get_all_properties player] returns all the properties that the player 
     owns*)
     
@@ -77,5 +77,11 @@
    (* [move_player] changes the player's current_location based on the number of moves
    and 40 boardspaces *)
 
+   val properties : player -> int list 
+(* [properties p] are the properties p owns *)
 
-   
+val remove_property: player -> int -> player 
+(* [remove_property p p_id] is p with p_id removed from the properties of p *)
+
+val add_property: player -> int -> player 
+(* [add_property p p_id] is p with p_id added to the properties of p *)

@@ -28,3 +28,7 @@ module Player_tests = Dune__exe__Player_tests
 
 (** @canonical Dune__exe.Property_tests *)
 module Property_tests = Dune__exe__Property_tests
+
+
+(** @canonical Dune__exe.State_tests *)
+module State_tests = Dune__exe__State_tests

@@ -1,24 +1,21 @@
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:1:cc card 2 name.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:1:cc card 2 name is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:1:cc card 2 name.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:3:chance card 2 name.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:3:chance card 2 name is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:3:chance card 2 name.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:5:cc card 2 id.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:5:cc card 2 id is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:5:cc card 2 id.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:6:chance card 1 id.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:6:chance card 1 id is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:6:chance card 1 id.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:8:cc card 1 message.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:8:cc card 1 message is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:8:cc card 1 message.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:11:chance card 2 message.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:11:chance card 2 message is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:11:chance card 2 message.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:12:cc card 1 action string.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:12:cc card 1 action string is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:12:cc card 1 action string.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:15:chance card 2 action string.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:15:chance card 2 action string is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:15:chance card 2 action string.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:1:cc card 2 name.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:1:cc card 2 name is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:1:cc card 2 name.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:3:chance card 2 name.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:3:chance card 2 name is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:3:chance card 2 name.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:5:cc card 2 id.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:5:cc card 2 id is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:5:cc card 2 id.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:7:chance card 2 id.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:7:chance card 2 id is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:7:chance card 2 id.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:9:cc card 2 message.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:9:cc card 2 message is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:9:cc card 2 message.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:12:cc card 1 action string.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:12:cc card 1 action string is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:12:cc card 1 action string.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for cards:14:chance card 1 action string.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for cards:14:chance card 1 action string is successful.
+2021-12-11T18:54:59+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for cards:14:chance card 1 action string.

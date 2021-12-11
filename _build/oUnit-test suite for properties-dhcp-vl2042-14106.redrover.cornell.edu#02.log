@@ -1,6 +1,9 @@
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for properties:1:id test 2.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for properties:1:id test 2 is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for properties:1:id test 2.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for properties:3:name test 2.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for properties:3:name test 2 is successful.
-2021-12-07T18:46:41+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for properties:3:name test 2.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for properties:1:init state, 3 players.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for properties:1:init state, 3 players is successful.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for properties:1:init state, 3 players.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for properties:3:init state, status.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for properties:3:init state, status is successful.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for properties:3:init state, status.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Start test test suite for properties:5:init state, current player.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: Test test suite for properties:5:init state, current player is successful.
+2021-12-11T18:55:00+00:00 dhcp-vl2042-14106.redrover.cornell.edu#02 I: End test test suite for properties:5:init state, current player.

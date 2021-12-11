@@ -26,12 +26,12 @@ let player_current_location_test
 name >:: fun _ -> 
 assert_equal expected_output (get_current_location indv_player)
 
-let player_properties_test
+(* let player_properties_test
 (name : string)
 (indv_player: player)
 (expected_output : string list) : test =
 name >:: fun _ -> 
-assert_equal expected_output (get_all_properties indv_player)
+assert_equal expected_output (get_all_properties indv_player) *)
 
 let test_player_records_1 = player_records_list "4"
 

@@ -1,36 +1,36 @@
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:0:cc card 1 name.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:0:cc card 1 name is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:0:cc card 1 name.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:2:chance card 1 name.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:2:chance card 1 name is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:2:chance card 1 name.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:4:cc card 1 id.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:4:cc card 1 id is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:4:cc card 1 id.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:6:chance card 1 id.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:6:chance card 1 id is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:6:chance card 1 id.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:8:cc card 1 message.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:8:cc card 1 message is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:8:cc card 1 message.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:10:chance card 1 message.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:10:chance card 1 message is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:10:chance card 1 message.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:12:cc card 1 action string.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:12:cc card 1 action string is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:12:cc card 1 action string.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:14:chance card 1 action string.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:14:chance card 1 action string is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:14:chance card 1 action string.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:16:draw chance.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:16:draw chance is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:16:draw chance.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:18:player 1 move to loc 41.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:18:player 1 move to loc 41 is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:18:player 1 move to loc 41.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:20:player 1 move to 6.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:20:player 1 move to 6 is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:20:player 1 move to 6.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:22:player 2: 1500 -> 1470?.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:22:player 2: 1500 -> 1470? is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:22:player 2: 1500 -> 1470?.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:0:cc card 1 name.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:0:cc card 1 name is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:0:cc card 1 name.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:2:chance card 1 name.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:2:chance card 1 name is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:2:chance card 1 name.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:4:cc card 1 id.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:4:cc card 1 id is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:4:cc card 1 id.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:6:chance card 1 id.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:6:chance card 1 id is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:6:chance card 1 id.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:8:cc card 1 message.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:8:cc card 1 message is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:8:cc card 1 message.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:10:chance card 1 message.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:10:chance card 1 message is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:10:chance card 1 message.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:12:cc card 1 action string.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:12:cc card 1 action string is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:12:cc card 1 action string.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:14:chance card 1 action string.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:14:chance card 1 action string is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:14:chance card 1 action string.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:16:draw chance.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:16:draw chance is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:16:draw chance.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:18:player 1 move to loc 41.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:18:player 1 move to loc 41 is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:18:player 1 move to loc 41.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:20:player 1 move to 6.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:20:player 1 move to 6 is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:20:player 1 move to 6.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for cards:22:player 2: 1500 -> 1470?.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for cards:22:player 2: 1500 -> 1470? is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for cards:22:player 2: 1500 -> 1470?.

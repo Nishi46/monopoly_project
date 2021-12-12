@@ -1,6 +1,12 @@
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for properties:0:id test 1.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for properties:0:id test 1 is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for properties:0:id test 1.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for properties:2:name test 1.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for properties:2:name test 1 is successful.
-2021-12-11T06:10:43+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for properties:2:name test 1.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for properties:0:init state, 3 players.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for properties:0:init state, 3 players is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for properties:0:init state, 3 players.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for properties:2:init state, boardspaces.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for properties:2:init state, boardspaces is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for properties:2:init state, boardspaces.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for properties:4:init state, current player.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for properties:4:init state, current player is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for properties:4:init state, current player.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Start test test suite for properties:6:check bankruptcy init state.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: Test test suite for properties:6:check bankruptcy init state is successful.
+2021-12-11T21:56:42+00:00 dhcp-vl2041-20215.eduroam.cornell.edu#01 I: End test test suite for properties:6:check bankruptcy init state.

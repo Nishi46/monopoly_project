@@ -1,20 +1,10 @@
-<<<<<<< HEAD
 # dune exec test/main.exe
 # OCAMLPARAM: unset
-# Workspace root: /Users/vian/cs3110/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dune06e6af.output 2> /dev/null
-# Auto-detected concurrency: 8
-# disable binary cache
-$ /Users/vian/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/kd/y5wp7c8d2pg11s_lgy9449c40000gn/T/dune817e0d.output
-=======
-# dune build
-# OCAMLPARAM: unset
 # Workspace root: /Users/jessicawu/monopoly_project
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune3d893e.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune73c939.output 2> /dev/null
 # Auto-detected concurrency: 8
 # disable binary cache
-$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune8db2da.output
->>>>>>> 57375b98bc12cabec5f6f27b9275ca1ae2f4c2dd
+$ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/qyfk4dk12rbg2hncwr9zpcvw0000gn/T/dune556aa9.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -122,3 +112,4 @@ $ /Users/jessicawu/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vk/
 #      ; windows_unicode = false
 #      }
 #  }
+# Workspace root: /Users/jessicawu/monopoly_project

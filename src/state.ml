@@ -237,7 +237,7 @@ let roll_dice s i =
         (Yojson.Basic.from_file "data/chance_community_chest.json")
     in
     if is_cc c new_pos then draw_cc cc s
-    else if is_chance c new_pos then draw_chance chance chance
+    else if is_chance c new_pos then draw_chance chance s
     else
       let p =
         Property.from_json (Yojson.Basic.from_file "data/property_test.json")

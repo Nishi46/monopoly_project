@@ -1,1 +1,1 @@
-src/move.mli: Cards Chancecc Jail Luxury_income_go Nothing Player Property State
+src/move.mli: Cards Player State

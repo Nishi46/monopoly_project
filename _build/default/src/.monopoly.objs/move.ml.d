@@ -1,1 +1,1 @@
-src/move.ml: Cards Chancecc Jail List Luxury_income_go Nothing Player Property Random State Yojson
+src/move.ml: Cards Chancecc List Player Property Random State Yojson

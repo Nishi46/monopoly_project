@@ -35,7 +35,7 @@
      (visibility public)
      (impl)
      (intf))
-    ((name Move) (obj_name monopoly__Move) (visibility public) (impl))
+    ((name Move) (obj_name monopoly__Move) (visibility public) (impl) (intf))
     ((name Nothing)
      (obj_name monopoly__Nothing)
      (visibility public)
